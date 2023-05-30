@@ -7,10 +7,10 @@
 #### Fastest mirror
 
 ```sh
-// selecting fastest mirror
+# selecting fastest mirror
 sudo pacman-mirrors --fasttrack
 
-// updating system
+# updating system
 sudo pacman -Syu
 ```
 
@@ -23,7 +23,7 @@ pacman -Qtdq | sudo pacman -Rns -
 ### System
 
 ```sh
-// enabling TRIM (for better SSD performances)
+# enabling TRIM (for better SSD performances)
 sudo systemctl enable fstrim.timer
 sudo systemctl start fstrim.timer
 ```
@@ -34,20 +34,20 @@ sudo systemctl start fstrim.timer
 
 ```sh
 sudo pacman -S aspell-en libmythes mythes-en languagetool
-// french
+# french
 sudo pacman -S aspell-fr mythes-fr
 ```
 
 #### Fonts
 
 ```sh
-// Emojis
+# Emojis
 sudo pacman -S noto-fonts-emoji
-// Microsoft
+# Microsoft
 sudo pamac build ttf-ms-win11-auto
-// manager
+# manager
 sudo pacman -S font-manager
-// glacial indifference (a cool font)
+# glacial indifference (a cool font)
 wget https://www.fontsquirrel.com/fonts/download/glacial-indifference --output-document=glacial-indifference.zip
 unzip glacial-indifference.zip -d glacial-indifference
 font-manager --install glacial-indifference/*.otf
@@ -96,7 +96,7 @@ sudo pacman -S gimp
 ### Utils
 
 ```sh
-// allows to copy texts and images to clipboard in command line
+# allows to copy texts and images to clipboard in command line
 sudo pacman -S wl-clipboard
 ```
 
