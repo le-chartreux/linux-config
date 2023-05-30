@@ -51,6 +51,7 @@ sudo pacman -S font-manager
 wget https://www.fontsquirrel.com/fonts/download/glacial-indifference --output-document=glacial-indifference.zip
 unzip glacial-indifference.zip -d glacial-indifference
 font-manager --install glacial-indifference/*.otf
+rm -r glacial-indifference.zip glacial-indifference
 ```
 
 ## Dev
