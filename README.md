@@ -64,6 +64,15 @@ git config --global user.email "XXX@XXX"
 git config --global core.editor nano
 ```
 
+### GitHub
+
+```sh
+ssh-keygen -t ed25519 -C "your-gh-email@something"
+wl-copy < ~/.ssh/id_*.pub
+```
+Then add it [here](https://github.com/settings/ssh/new).
+
+
 ### Applications
 
 ```sh
@@ -82,6 +91,13 @@ sudo pacman -S discord
 
 ```sh
 sudo pacman -S gimp
+```
+
+### Utils
+
+```sh
+// allows to copy texts and images to clipboard in command line
+sudo pacman -S wl-clipboard
 ```
 
 
