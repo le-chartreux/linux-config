@@ -2,24 +2,6 @@
 
 ## Global
 
-### Pacman
-
-#### Fastest mirror
-
-```sh
-# selecting fastest mirror
-sudo pacman-mirrors --fasttrack
-
-# updating system
-sudo pacman -Syu
-```
-
-#### Remove orphaned packages
-
-```sh
-sudo pamac remove -o
-```
-
 ### System
 
 ```sh
@@ -98,6 +80,16 @@ sudo pacman -S gimp
 
 ### Package managers
 
+#### Pacman
+
+```sh
+# selecting fastest mirror
+sudo pacman-mirrors --fasttrack
+
+# updating system
+sudo pacman -Syu
+```
+
 #### Snap
 
 ```sh
@@ -123,6 +115,8 @@ sudo sed -i 's/#CheckAURUpdates/CheckAURUpdates/g' /etc/pamac.conf
 ```sh
 # disable icon when no update
 sudo sed -i 's/#NoUpdateHideIcon/NoUpdateHideIcon/g' /etc/pamac.conf
+# remove orphaned packages
+sudo pamac remove -o
 ```
 
 
