@@ -2,6 +2,47 @@
 
 ## Global
 
+### Package managers
+
+#### Pacman
+
+```sh
+# selecting fastest mirror
+sudo pacman-mirrors --fasttrack
+
+# updating system
+sudo pacman -Syu
+```
+
+#### Snap
+
+```sh
+sudo pacman -S snapd
+sudo systemctl enable --now snapd.socket
+# classic snap support
+sudo ln -s /var/lib/snapd/snap /snap
+# snap inside pamac
+pamac install libpamac-snap-plugin
+sudo sed -i 's/#EnableSnap/EnableSnap/g' /etc/pamac.conf
+```
+
+#### AUR
+
+```sh
+# AUR inside pamac
+sed -i 's/#EnableAUR/EnableAUR/g' /etc/pamac.conf
+sudo sed -i 's/#CheckAURUpdates/CheckAURUpdates/g' /etc/pamac.conf
+```
+
+#### Pamac
+
+```sh
+# disable icon when no update
+sudo sed -i 's/#NoUpdateHideIcon/NoUpdateHideIcon/g' /etc/pamac.conf
+# remove orphaned packages
+sudo pamac remove -o
+```
+
 ### System
 
 ```sh
@@ -76,47 +117,6 @@ sudo pacman -S discord
 
 ```sh
 sudo pacman -S gimp
-```
-
-### Package managers
-
-#### Pacman
-
-```sh
-# selecting fastest mirror
-sudo pacman-mirrors --fasttrack
-
-# updating system
-sudo pacman -Syu
-```
-
-#### Snap
-
-```sh
-sudo pacman -S snapd
-sudo systemctl enable --now snapd.socket
-# classic snap support
-sudo ln -s /var/lib/snapd/snap /snap
-# snap inside pamac
-pamac install libpamac-snap-plugin
-sudo sed -i 's/#EnableSnap/EnableSnap/g' /etc/pamac.conf
-```
-
-#### AUR
-
-```sh
-# AUR inside pamac
-sed -i 's/#EnableAUR/EnableAUR/g' /etc/pamac.conf
-sudo sed -i 's/#CheckAURUpdates/CheckAURUpdates/g' /etc/pamac.conf
-```
-
-#### Pamac
-
-```sh
-# disable icon when no update
-sudo sed -i 's/#NoUpdateHideIcon/NoUpdateHideIcon/g' /etc/pamac.conf
-# remove orphaned packages
-sudo pamac remove -o
 ```
 
 
