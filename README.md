@@ -76,7 +76,10 @@ Then add it [here](https://github.com/settings/ssh/new).
 ### Applications
 
 ```sh
+# codium
 sudo pacman -S code
+# jetbrains toolbox
+curl -fsSL https://raw.githubusercontent.com/nagygergo/jetbrains-toolbox-install/master/jetbrains-toolbox.sh | bash && /opt/jetbrains-toolbox/jetbrains-toolbox
 ```
 
 ## Misc applications
