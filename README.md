@@ -17,7 +17,7 @@ sudo pacman -Syu
 #### Remove orphaned packages
 
 ```sh
-pacman -Qtdq | sudo pacman -Rns -
+sudo pamac remove -o
 ```
 
 ### System
