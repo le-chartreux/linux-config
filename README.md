@@ -1,5 +1,9 @@
 # Configuration for Manjaro 22.1.3 Gnome minimal
 
+My personnal configuration for [Manjaro 22.1.3 minimal with Gnome 4 desktop](https://download.manjaro.org/gnome/22.1.3/manjaro-gnome-22.1.3-minimal-230529-linux61.iso).
+
+I recommend that you setup the tools from the [Utilities](#utilities) and [Package managers](#package-managers) sections before the other parts, since they are sometimes needed.
+
 ## Global
 
 ### Package managers
@@ -9,7 +13,6 @@
 ```sh
 # selecting fastest mirror
 sudo pacman-mirrors --fasttrack
-
 # updating system
 sudo pacman -Syu
 ```
@@ -17,9 +20,10 @@ sudo pacman -Syu
 #### Snap
 
 ```sh
+# install
 sudo pacman -S snapd
 sudo systemctl enable --now snapd.socket
-# classic snap support
+# enable classic snap support
 sudo ln -s /var/lib/snapd/snap /snap
 # snap inside pamac
 pamac install libpamac-snap-plugin
@@ -30,7 +34,7 @@ sudo sed -i 's/#EnableSnap/EnableSnap/g' /etc/pamac.conf
 
 ```sh
 # AUR inside pamac
-sed -i 's/#EnableAUR/EnableAUR/g' /etc/pamac.conf
+sudo sed -i 's/#EnableAUR/EnableAUR/g' /etc/pamac.conf
 sudo sed -i 's/#CheckAURUpdates/CheckAURUpdates/g' /etc/pamac.conf
 ```
 
@@ -56,6 +60,7 @@ sudo systemctl start fstrim.timer
 #### Spellcheckers
 
 ```sh
+# english
 sudo pacman -S aspell-en libmythes mythes-en languagetool
 # french
 sudo pacman -S aspell-fr mythes-fr
@@ -68,8 +73,6 @@ sudo pacman -S aspell-fr mythes-fr
 sudo pacman -S noto-fonts-emoji
 # Microsoft
 sudo pamac build ttf-ms-win11-auto
-# manager
-sudo pacman -S font-manager
 # glacial indifference (a cool font)
 wget https://www.fontsquirrel.com/fonts/download/glacial-indifference --output-document=glacial-indifference.zip
 unzip glacial-indifference.zip -d glacial-indifference
@@ -120,11 +123,13 @@ sudo pacman -S gimp
 ```
 
 
-### Utils
+### Utilities
 
 ```sh
 # allows to copy texts and images to clipboard in command line
 sudo pacman -S wl-clipboard
+# allows to manage fonts
+sudo pacman -S font-manager
 ```
 
 
