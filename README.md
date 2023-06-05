@@ -95,6 +95,22 @@ font-manager --install glacial-indifference/*.otf
 rm -r glacial-indifference.zip glacial-indifference
 ```
 
+## Gnome 4
+
+### Extensions
+
+```sh
+# tool to install from cli
+pipx install gnome-extensions-cli --system-site-packages 
+# visual extensions
+gext install blur-my-shell@aunetx gnome-ui-tune@itstime.tech impatience@gfxmonk.net just-perfection-desktop@just-perfection panel-corners@aunetx rounded-window-corners@yilozt transparent-window-moving@noobsai.github.com
+# useful extensions
+gext install caffeine@patapon.info dash-to-dock@micxgx.gmail.com no-overview@fthx freon@UshakovVasilii_Github.yahoo.com Resource_Monitor@Ory0n runcat@kolesnikov.se
+# fixes
+## for glitches on fullscreen (eg with the dock not hiding)
+gext install unredirect@vaina.lt
+```
+
 ## Dev
 
 ### Git
