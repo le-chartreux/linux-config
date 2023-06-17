@@ -147,7 +147,7 @@ curl -fsSL https://raw.githubusercontent.com/nagygergo/jetbrains-toolbox-install
 sudo pacman -S discord
 ```
 
-### Graphism
+### Graphisme
 
 ```sh
 sudo pacman -S gimp
