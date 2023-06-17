@@ -102,10 +102,31 @@ rm -r glacial-indifference.zip glacial-indifference
 ```sh
 # tool to install from cli
 pipx install gnome-extensions-cli --system-site-packages 
+```
+
+#### Resource Monitor
+
+```sh
+gext install Resource_Monitor@Ory0n
+dconf write /com/github/Ory0n/Resource_Monitor/cpufrequencystatus false
+dconf write /com/github/Ory0n/Resource_Monitor/decimalsstatus true
+dconf write /com/github/Ory0n/Resource_Monitor/diskspacestatus false
+dconf write /com/github/Ory0n/Resource_Monitor/diskstatsstatus false
+dconf write /com/github/Ory0n/Resource_Monitor/gpustatus false
+dconf write /com/github/Ory0n/Resource_Monitor/netethstatus false
+dconf write /com/github/Ory0n/Resource_Monitor/netwlanstatus false
+dconf write /com/github/Ory0n/Resource_Monitor/ramunit "'perc'"
+dconf write /com/github/Ory0n/Resource_Monitor/swapstatus true
+dconf write /com/github/Ory0n/Resource_Monitor/swapunit "'perc'"
+dconf write /com/github/Ory0n/Resource_Monitor/thermalcputemperaturestatus false
+dconf write /com/github/Ory0n/Resource_Monitor/thermalgputemperaturestatus false
+```
+
+```sh
 # visual extensions
 gext install blur-my-shell@aunetx gnome-ui-tune@itstime.tech impatience@gfxmonk.net just-perfection-desktop@just-perfection panel-corners@aunetx rounded-window-corners@yilozt transparent-window-moving@noobsai.github.com
 # useful extensions
-gext install caffeine@patapon.info dash-to-dock@micxgx.gmail.com no-overview@fthx freon@UshakovVasilii_Github.yahoo.com Resource_Monitor@Ory0n runcat@kolesnikov.se
+gext install caffeine@patapon.info dash-to-dock@micxgx.gmail.com no-overview@fthx freon@UshakovVasilii_Github.yahoo.com runcat@kolesnikov.se
 # fixes
 ## for glitches on fullscreen (eg with the dock not hiding)
 gext install unredirect@vaina.lt
