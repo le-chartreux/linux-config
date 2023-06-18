@@ -304,13 +304,6 @@ Makes the window semi-transparent when moving or resizing.
 gext install transparent-window-moving@noobsai.github.com
 ```
 
-```sh
-# visual extensions
-gext install transparent-window-moving@noobsai.github.com
-# useful extensions
-gext install runcat@kolesnikov.se
-```
-
 ## Dev
 
 ### Git
