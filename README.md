@@ -78,7 +78,9 @@ sudo sed -i 's/#EnableAUR/EnableAUR/g' /etc/pamac.conf
 sudo sed -i 's/#CheckAURUpdates/CheckAURUpdates/g' /etc/pamac.conf
 ```
 
-#### Pamac
+#### [Pamac](https://wiki.manjaro.org/index.php/Pamac)
+
+Manjaro's Package Manager.
 
 ```sh
 # disable icon when no update
