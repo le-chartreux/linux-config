@@ -202,6 +202,20 @@ For glitches on fullscreen (e.g. with the dock not hiding).
 gext install unredirect@vaina.lt
 ```
 
+#### [Freon](https://github.com/UshakovVasilii/gnome-shell-extension-freon)
+
+Display system temperatures (CPU, disk, video card), voltage and fan RPM. I use it to display the maximum temperature of the CPUs.
+
+```sh
+gext install freon@UshakovVasilii_Github.yahoo.com 
+dconf write /org/gnome/shell/extensions/freon/hot-sensors "['__max__']"
+dconf write /org/gnome/shell/extensions/freon/show-rotationrate false
+dconf write /org/gnome/shell/extensions/freon/show-voltage false
+dconf write /org/gnome/shell/extensions/freon/show-power false
+dconf write /org/gnome/shell/extensions/freon/group-rotationrate false
+dconf write /org/gnome/shell/extensions/freon/group-voltage false
+```
+
 #### [Resource Monitor](https://github.com/0ry0n/Resource_Monitor/)
 
 Show some useful information about the system.
@@ -226,7 +240,7 @@ dconf write /com/github/Ory0n/Resource_Monitor/thermalgputemperaturestatus false
 # visual extensions
 gext install gnome-ui-tune@itstime.tech impatience@gfxmonk.net just-perfection-desktop@just-perfection panel-corners@aunetx rounded-window-corners@yilozt transparent-window-moving@noobsai.github.com
 # useful extensions
-gext install no-overview@fthx freon@UshakovVasilii_Github.yahoo.com runcat@kolesnikov.se
+gext install no-overview@fthx runcat@kolesnikov.se
 ```
 
 ## Dev
