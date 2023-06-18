@@ -46,7 +46,7 @@ To ensure a smooth setup, I recommend starting with the tools from the [Utilitie
 
 #### [pacman](https://wiki.archlinux.org/title/Pacman)
 
-The Arch package manager. 
+The package manager for [Arch Linux](https://archlinux.org/).
 
 ```sh
 # selecting fastest mirror
@@ -57,7 +57,7 @@ sudo pacman -Syu
 
 #### [snap](https://ubuntu.com/core/services/guide/snaps-intro)
 
-Canonical app store, where apps are officially deployed by the developers.
+The official app store provided by [Canonical](https://canonical.com/), where developers can deploy their applications.
 
 ```sh
 # install
@@ -72,7 +72,7 @@ sudo sed -i 's/#EnableSnap/EnableSnap/g' /etc/pamac.conf
 
 #### [AUR](https://wiki.archlinux.org/title/Arch_User_Repository)
 
-Community-driven repository maintained for Arch.
+Community-driven repository maintained for [Arch Linux](https://archlinux.org/).
 
 ```sh
 # AUR inside pamac
@@ -82,7 +82,7 @@ sudo sed -i 's/#CheckAURUpdates/CheckAURUpdates/g' /etc/pamac.conf
 
 #### [Pamac](https://wiki.manjaro.org/index.php/Pamac)
 
-Manjaro's Package Manager.
+The package manager used in Manjaro Linux.
 
 ```sh
 # disable icon when no update
@@ -93,7 +93,7 @@ sudo pamac remove -o
 
 #### [pip](https://pypi.org/project/pip/)
 
-Package installer for Python. Even if you're not a Python developer, a lot of applications need it.
+Package installer for Python. Many applications rely on it, install it to use them.
 
 ```sh
 python -m ensurepip --upgrade
@@ -101,7 +101,7 @@ python -m ensurepip --upgrade
 
 #### [pipx](https://pypa.github.io/pipx/)
 
-The recommended way to install Python applications from pip. Allows to no mess up your system Python environment by installing each app inside an isolated virtual environment.
+The recommended method for installing Python applications from pip. It provides the ability to install each application inside a separate isolated virtual environment, preventing any conflicts or interference with your system's Python environment. This approach helps keep your system clean and organized while managing Python applications.
 
 ```sh
 python3 -m pip install --user pipx
