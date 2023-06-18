@@ -4,6 +4,40 @@ My personal configuration for [Manjaro 22.1.3 minimal with Gnome 4 desktop](http
 
 I recommend that you set up the tools from the [Utilities](#utilities) and [Installers](#installers) sections before the other parts, since they are sometimes needed.
 
+## Table of contents
+
+<!-- TOC -->
+* [Configuration for Manjaro 22.1.3 Gnome minimal](#configuration-for-manjaro-2213-gnome-minimal)
+  * [Table of contents](#table-of-contents)
+  * [Global](#global)
+    * [Installers](#installers)
+      * [Pacman](#pacman)
+      * [Snap](#snap)
+      * [AUR](#aur)
+      * [Pamac](#pamac)
+      * [Pip](#pip)
+      * [Pipx](#pipx)
+    * [System](#system)
+    * [Text](#text)
+      * [Spellcheckers](#spellcheckers)
+      * [Fonts](#fonts)
+  * [Gnome 4](#gnome-4)
+    * [Extensions](#extensions)
+      * [Blur my Shell](#blur-my-shell)
+      * [Caffeine](#caffeine)
+      * [Dash to Dock](#dash-to-dock)
+      * [Disable unredirect fullscreen windows](#disable-unredirect-fullscreen-windows)
+      * [Resource Monitor](#resource-monitor)
+  * [Dev](#dev)
+    * [Git](#git)
+    * [GitHub](#github)
+    * [Applications](#applications)
+  * [Misc applications](#misc-applications)
+    * [Social](#social)
+    * [Graphisme](#graphisme)
+    * [Utilities](#utilities)
+<!-- TOC -->
+
 ## Global
 
 ### Installers
