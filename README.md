@@ -38,6 +38,7 @@ To ensure a smooth setup, I recommend starting with the tools from the [Utilitie
       * [RunCat](#runcat)
       * [Transparent Window Moving](#transparent-window-moving)
     * [Theme](#theme)
+    * [Keybindings](#keybindings)
   * [Dev](#dev)
     * [Git](#git)
     * [GitHub](#github)
@@ -310,6 +311,10 @@ gext install transparent-window-moving@noobsai.github.com
 ```
 
 ### Theme
+
+TODO
+
+### Keybindings
 
 TODO
 
