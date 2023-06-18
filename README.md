@@ -51,6 +51,7 @@ To ensure a smooth setup, I recommend starting with the tools from the [Utilitie
     * [Social](#social)
       * [Discord](#discord)
     * [Graphisme](#graphisme)
+      * [Gimp](#gimp)
     * [Utilities](#utilities)
 <!-- TOC -->
 
@@ -96,7 +97,7 @@ sudo sed -i 's/#CheckAURUpdates/CheckAURUpdates/g' /etc/pamac.conf
 
 #### [Pamac](https://wiki.manjaro.org/index.php/Pamac)
 
-The package manager used in Manjaro Linux.
+The package manager used in [Manjaro Linux](https://manjaro.org/).
 
 ```sh
 # disable icon when no update
@@ -107,7 +108,7 @@ sudo pamac remove -o
 
 #### [pip](https://pypi.org/project/pip/)
 
-Package installer for Python. Many applications rely on it, install it to use them.
+Package installer for [Python](https://www.python.org/). Many applications rely on it, install it to use them.
 
 ```sh
 python -m ensurepip --upgrade
@@ -115,7 +116,7 @@ python -m ensurepip --upgrade
 
 #### [pipx](https://pypa.github.io/pipx/)
 
-The recommended method for installing Python applications from pip. It provides the ability to install each application inside a separate isolated virtual environment, preventing any conflicts or interference with your system's Python environment. This approach helps keep your system clean and organized while managing Python applications.
+The recommended method for installing [Python](https://www.python.org/) applications from [pip](#pip). It provides the ability to install each application inside a separate isolated virtual environment, preventing any conflicts or interference with your system's [Python](https://www.python.org/) environment. This approach helps keep your system clean and organized while managing [Python](https://www.python.org/) applications.
 
 ```sh
 python3 -m pip install --user pipx
@@ -166,7 +167,7 @@ pipx install gnome-extensions-cli --system-site-packages
 
 #### [Blur my Shell](https://github.com/aunetx/blur-my-shell)
 
-Add blur effect to Gnome!
+Add a blur effect.
 
 ```sh
 gext install blur-my-shell@aunetx
@@ -231,7 +232,7 @@ dconf write /org/gnome/shell/extensions/freon/group-voltage false
 
 #### [Gnome 4x UI Improvements](https://github.com/axxapy/gnome-ui-tune)
 
-Improve the Gnome overview, mainly bigger workspaces thumbnails and search box hidden when unused. 
+Improve the overview, mainly bigger workspaces thumbnails and search box hidden when unused. 
 
 ```sh
 gext install gnome-ui-tune@itstime.tech
@@ -239,7 +240,7 @@ gext install gnome-ui-tune@itstime.tech
 
 #### [Just Perfection](https://gitlab.gnome.org/jrahmatzadeh/just-perfection)
 
-Disable Gnome UI elements, change the behavior and customize your Gnome Desktop.
+Hide some UI elements, change the behavior and customize the desktop.
 
 ```sh
 gext install just-perfection-desktop@just-perfection
@@ -321,7 +322,7 @@ TODO
 
 ## Dev
 
-### Git
+### [Git](https://git-scm.com/)
 
 ```
 git config --global user.name "XXX"
@@ -329,7 +330,7 @@ git config --global user.email "XXX@XXX"
 git config --global core.editor nano
 ```
 
-### GitHub
+### [GitHub](https://github.com/)
 
 ```sh
 ssh-keygen -t ed25519 -C "your-gh-email@something"
@@ -356,7 +357,7 @@ Tool to manage the JetBrains IDEs.
 curl -fsSL https://raw.githubusercontent.com/nagygergo/jetbrains-toolbox-install/master/jetbrains-toolbox.sh | bash && /opt/jetbrains-toolbox/jetbrains-toolbox
 ```
 
-### Python
+### [Python](https://www.python.org/)
 
 TODO
 
@@ -368,7 +369,7 @@ TODO
 
 ### Social
 
-#### Discord
+#### [Discord](https://discord.com/)
 
 ```sh
 sudo pacman -S discord
@@ -378,6 +379,8 @@ betterdiscordctl install
 ```
 
 ### Graphisme
+
+#### [Gimp](https://www.gimp.org/)
 
 ```sh
 sudo pacman -S gimp
