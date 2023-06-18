@@ -271,9 +271,18 @@ dconf write /com/github/Ory0n/Resource_Monitor/thermalcputemperaturestatus false
 dconf write /com/github/Ory0n/Resource_Monitor/thermalgputemperaturestatus false
 ```
 
+#### [Rounded Window Corners](https://github.com/yilozt/rounded-window-corners)
+
+Add rounded corners to apps.
+
+```sh
+gext install rounded-window-corners@yilozt
+dconf write /org/gnome/shell/extensions/rounded-window-corners/global-rounded-corner-settings "{'padding': <{'left': <uint32 1>, 'right': <uint32 1>, 'top': <uint32 1>, 'bottom': <uint32 1>}>, 'keep_rounded_corners': <{'maximized': <false>, 'fullscreen': <false>}>, 'border_radius': <uint32 12>, 'smoothing': <uint32 1>, 'enabled': <true>}"
+```
+
 ```sh
 # visual extensions
-gext install rounded-window-corners@yilozt transparent-window-moving@noobsai.github.com
+gext install transparent-window-moving@noobsai.github.com
 # useful extensions
 gext install runcat@kolesnikov.se
 ```
