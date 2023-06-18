@@ -266,7 +266,7 @@ dconf write /com/github/Ory0n/Resource_Monitor/thermalgputemperaturestatus false
 # visual extensions
 gext install panel-corners@aunetx rounded-window-corners@yilozt transparent-window-moving@noobsai.github.com
 # useful extensions
-gext install no-overview@fthx runcat@kolesnikov.se
+gext install runcat@kolesnikov.se
 ```
 
 ## Dev
