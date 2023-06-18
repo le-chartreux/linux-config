@@ -259,6 +259,7 @@ Show some useful information about the system.
 gext install Resource_Monitor@Ory0n
 dconf write /com/github/Ory0n/Resource_Monitor/cpustatus false
 dconf write /com/github/Ory0n/Resource_Monitor/decimalsstatus true
+dconf write /com/github/Ory0n/Resource_Monitor/iconsposition "'left'"
 dconf write /com/github/Ory0n/Resource_Monitor/diskspacestatus false
 dconf write /com/github/Ory0n/Resource_Monitor/diskstatsstatus false
 dconf write /com/github/Ory0n/Resource_Monitor/gpustatus false
