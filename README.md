@@ -224,6 +224,14 @@ Offers small improvements on the Gnome overview, mainly bigger workspaces thumbn
 gext install gnome-ui-tune@itstime.tech
 ```
 
+#### [Impatience](http://gfxmonk.net/dist/0install/gnome-shell-impatience.xml)
+
+Speed up builtin Gnome animations.
+
+```sh
+gext install impatience@gfxmonk.net
+```
+
 #### [Resource Monitor](https://github.com/0ry0n/Resource_Monitor/)
 
 Show some useful information about the system.
