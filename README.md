@@ -53,7 +53,9 @@ sudo pacman-mirrors --fasttrack
 sudo pacman -Syu
 ```
 
-#### Snap
+#### [Snap](https://ubuntu.com/core/services/guide/snaps-intro)
+
+Canonical app store, where apps are officially deployed by the developers.
 
 ```sh
 # install
