@@ -2,7 +2,7 @@
 
 My personal configuration for [Manjaro 22.1.3 minimal with Gnome 4 desktop](https://download.manjaro.org/gnome/22.1.3/manjaro-gnome-22.1.3-minimal-230529-linux61.iso).
 
-I recommend that you setup the tools from the [Utilities](#utilities) and [Installers](#installers) sections before the other parts, since they are sometimes needed.
+I recommend that you set up the tools from the [Utilities](#utilities) and [Installers](#installers) sections before the other parts, since they are sometimes needed.
 
 ## Global
 
