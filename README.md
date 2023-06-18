@@ -362,8 +362,13 @@ TODO
 
 ### Social
 
+#### Discord
+
 ```sh
 sudo pacman -S discord
+# betterdiscord
+sudo pamac build betterdiscordctl
+betterdiscordctl install
 ```
 
 ### Graphisme
