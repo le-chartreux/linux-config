@@ -232,6 +232,24 @@ Speed up builtin Gnome animations.
 gext install impatience@gfxmonk.net
 ```
 
+#### [Just Perfection](https://gitlab.gnome.org/jrahmatzadeh/just-perfection)
+
+Disable Gnome UI elements, change the behavior and customize your Gnome Desktop.
+
+```sh
+gext install just-perfection-desktop@just-perfection
+dconf write /org/gnome/shell/extensions/just-perfection/theme true
+dconf write /org/gnome/shell/extensions/just-perfection/activities-button false
+dconf write /org/gnome/shell/extensions/just-perfection/app-menu-label false
+dconf write /org/gnome/shell/extensions/just-perfection/world-clock false
+dconf write /org/gnome/shell/extensions/just-perfection/weather false
+dconf write /org/gnome/shell/extensions/just-perfection/events-button false
+dconf write /org/gnome/shell/extensions/just-perfection/startup-status 0
+dconf write /org/gnome/shell/extensions/just-perfection/animation 4
+dconf write /org/gnome/shell/extensions/just-perfection/notification-banner-position 2
+```
+
+
 #### [Resource Monitor](https://github.com/0ry0n/Resource_Monitor/)
 
 Show some useful information about the system.
@@ -254,7 +272,7 @@ dconf write /com/github/Ory0n/Resource_Monitor/thermalgputemperaturestatus false
 
 ```sh
 # visual extensions
-gext install impatience@gfxmonk.net just-perfection-desktop@just-perfection panel-corners@aunetx rounded-window-corners@yilozt transparent-window-moving@noobsai.github.com
+gext install panel-corners@aunetx rounded-window-corners@yilozt transparent-window-moving@noobsai.github.com
 # useful extensions
 gext install no-overview@fthx runcat@kolesnikov.se
 ```
