@@ -55,7 +55,7 @@ python -m ensurepip --upgrade
 
 #### Pipx
 
-Pipx is the recommanded way to install Python applicatations from pip. It allows you to no mess up your system Python environment by installing each app inside a virtual environment.
+Pipx is the recommended way to install Python applications from pip. It allows you to no mess up your system Python environment by installing each app inside a virtual environment.
 
 ```sh
 python3 -m pip install --user pipx
