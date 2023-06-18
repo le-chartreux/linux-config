@@ -12,7 +12,7 @@ I recommend that you set up the tools from the [Utilities](#utilities) and [Inst
   * [Global](#global)
     * [Installers](#installers)
       * [pacman](#pacman)
-      * [Snap](#snap)
+      * [snap](#snap)
       * [AUR](#aur)
       * [Pamac](#pamac)
       * [pip](#pip)
@@ -53,7 +53,7 @@ sudo pacman-mirrors --fasttrack
 sudo pacman -Syu
 ```
 
-#### [Snap](https://ubuntu.com/core/services/guide/snaps-intro)
+#### [snap](https://ubuntu.com/core/services/guide/snaps-intro)
 
 Canonical app store, where apps are officially deployed by the developers.
 
