@@ -169,7 +169,7 @@ dconf write /org/gnome/shell/extensions/blur-my-shell/overview/style-components 
 
 #### [Caffeine](https://github.com/eonpatapon/gnome-shell-extension-caffeine)
 
-To pause screen saving.
+Pause screen saving.
 
 ```sh
 gext install caffeine@patapon.info
@@ -177,7 +177,7 @@ gext install caffeine@patapon.info
 
 #### [Dash to Dock](https://micheleg.github.io/dash-to-dock/)
 
-A nice dock.
+Change the dock to a nicer one.
 
 ```sh
 gext install dash-to-dock@micxgx.gmail.com
@@ -202,7 +202,7 @@ dconf write /org/gnome/shell/extensions/dash-to-dock/max-alpha 1
 
 #### [Disable unredirect fullscreen windows](https://github.com/kazysmaster/gnome-shell-extension-disable-unredirect)
 
-For glitches on fullscreen (e.g. with the dock not hiding).
+Patch glitches on fullscreen (e.g. with the dock not hiding).
 
 ```sh
 gext install unredirect@vaina.lt
@@ -224,7 +224,7 @@ dconf write /org/gnome/shell/extensions/freon/group-voltage false
 
 #### [Gnome 4x UI Improvements](https://github.com/axxapy/gnome-ui-tune)
 
-Offers small improvements on the Gnome overview, mainly bigger workspaces thumbnails and search box hidden when unused. 
+Improve the Gnome overview, mainly bigger workspaces thumbnails and search box hidden when unused. 
 
 ```sh
 gext install gnome-ui-tune@itstime.tech
@@ -259,7 +259,7 @@ dconf write /org/gnome/shell/extensions/panel-corners/panel-corners true
 
 #### [Resource Monitor](https://github.com/0ry0n/Resource_Monitor/)
 
-Show some useful information about the system.
+Show some useful information about the system (RAM & swap usage here).
 
 ```sh
 gext install Resource_Monitor@Ory0n
