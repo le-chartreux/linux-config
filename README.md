@@ -216,6 +216,14 @@ dconf write /org/gnome/shell/extensions/freon/group-rotationrate false
 dconf write /org/gnome/shell/extensions/freon/group-voltage false
 ```
 
+#### [Gnome 4x UI Improvements](https://github.com/axxapy/gnome-ui-tune)
+
+Offers small improvements on the Gnome overview, mainly bigger workspaces thumbnails and search box hidden when unused. 
+
+```sh
+gext install gnome-ui-tune@itstime.tech
+```
+
 #### [Resource Monitor](https://github.com/0ry0n/Resource_Monitor/)
 
 Show some useful information about the system.
@@ -238,7 +246,7 @@ dconf write /com/github/Ory0n/Resource_Monitor/thermalgputemperaturestatus false
 
 ```sh
 # visual extensions
-gext install gnome-ui-tune@itstime.tech impatience@gfxmonk.net just-perfection-desktop@just-perfection panel-corners@aunetx rounded-window-corners@yilozt transparent-window-moving@noobsai.github.com
+gext install impatience@gfxmonk.net just-perfection-desktop@just-perfection panel-corners@aunetx rounded-window-corners@yilozt transparent-window-moving@noobsai.github.com
 # useful extensions
 gext install no-overview@fthx runcat@kolesnikov.se
 ```
