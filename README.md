@@ -41,6 +41,8 @@ To ensure a smooth setup, I recommend starting with the tools from the [Utilitie
     * [Git](#git)
     * [GitHub](#github)
     * [Applications](#applications)
+      * [Visual Studio Code](#visual-studio-code)
+      * [JetBrains Toolbox App](#jetbrains-toolbox-app)
   * [Misc applications](#misc-applications)
     * [Social](#social)
     * [Graphisme](#graphisme)
