@@ -290,6 +290,14 @@ gext install runcat@kolesnikov.se
 dconf write /org/gnome/shell/extensions/runcat/idle-threshold 15
 ```
 
+#### [Transparent Window Moving](https://github.com/Noobsai/transparent-window-moving)
+
+Makes the window semi-transparent when moving or resizing.
+
+```sh
+gext install transparent-window-moving@noobsai.github.com
+```
+
 ```sh
 # visual extensions
 gext install transparent-window-moving@noobsai.github.com
