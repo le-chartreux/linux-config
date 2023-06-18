@@ -68,7 +68,9 @@ pamac install libpamac-snap-plugin
 sudo sed -i 's/#EnableSnap/EnableSnap/g' /etc/pamac.conf
 ```
 
-#### AUR
+#### [AUR](https://wiki.archlinux.org/title/Arch_User_Repository)
+
+Community-driven repository maintained for Arch.
 
 ```sh
 # AUR inside pamac
