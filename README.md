@@ -241,6 +241,15 @@ dconf write /org/gnome/shell/extensions/just-perfection/animation 4
 dconf write /org/gnome/shell/extensions/just-perfection/notification-banner-position 2
 ```
 
+#### [Panel corners](https://github.com/aunetx/panel-corners)
+
+Add round corners to the screen.
+
+```sh
+gext install panel-corners@aunetx
+dconf write /org/gnome/shell/extensions/panel-corners/screen-corners true
+dconf write /org/gnome/shell/extensions/panel-corners/panel-corners true
+```
 
 #### [Resource Monitor](https://github.com/0ry0n/Resource_Monitor/)
 
