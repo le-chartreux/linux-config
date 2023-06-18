@@ -224,14 +224,6 @@ Offers small improvements on the Gnome overview, mainly bigger workspaces thumbn
 gext install gnome-ui-tune@itstime.tech
 ```
 
-#### [Impatience](http://gfxmonk.net/dist/0install/gnome-shell-impatience.xml)
-
-Speed up builtin Gnome animations.
-
-```sh
-gext install impatience@gfxmonk.net
-```
-
 #### [Just Perfection](https://gitlab.gnome.org/jrahmatzadeh/just-perfection)
 
 Disable Gnome UI elements, change the behavior and customize your Gnome Desktop.
