@@ -283,6 +283,8 @@ dconf write /org/gnome/shell/extensions/rounded-window-corners/global-rounded-co
 
 #### [RunCat](https://github.com/win0err/gnome-runcat)
 
+Indicator of CPU usage with a cat whose running speed depends on it.
+
 ```sh
 gext install runcat@kolesnikov.se
 dconf write /org/gnome/shell/extensions/runcat/idle-threshold 15
