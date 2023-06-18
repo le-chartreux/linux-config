@@ -1,6 +1,6 @@
 # Configuration for Manjaro 22.1.3 Gnome minimal
 
-My personal configuration for [Manjaro 22.1.3 minimal with Gnome 4 desktop](https://download.manjaro.org/gnome/22.1.3/manjaro-gnome-22.1.3-minimal-230529-linux61.iso).
+My personal configuration for [Manjaro 22.1.3 minimal with Gnome 4 desktop](https://download.manjaro.org/gnome/22.1.3/manjaro-gnome-22.1.3-minimal-230529-linux61.iso). It includes all the commands to install & parametrize it. Everything is done with Shell commands (except a part of the GitHub configuration that you should do on the GitHub website): no need to search on settings, just copy/paste the commands.
 
 I recommend that you set up the tools from the [Utilities](#utilities) and [Installers](#installers) sections before the other parts, since they are sometimes needed.
 
