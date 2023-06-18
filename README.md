@@ -89,7 +89,9 @@ sudo sed -i 's/#NoUpdateHideIcon/NoUpdateHideIcon/g' /etc/pamac.conf
 sudo pamac remove -o
 ```
 
-#### Pip
+#### [pip](https://pypi.org/project/pip/)
+
+Package installer for Python. Even if you're not a Python developer, a lot of applications need it.
 
 ```sh
 python -m ensurepip --upgrade
