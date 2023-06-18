@@ -37,12 +37,15 @@ To ensure a smooth setup, I recommend starting with the tools from the [Utilitie
       * [Rounded Window Corners](#rounded-window-corners)
       * [RunCat](#runcat)
       * [Transparent Window Moving](#transparent-window-moving)
+    * [Theme](#theme)
   * [Dev](#dev)
     * [Git](#git)
     * [GitHub](#github)
     * [Applications](#applications)
       * [Visual Studio Code](#visual-studio-code)
       * [JetBrains Toolbox App](#jetbrains-toolbox-app)
+    * [Python](#python)
+    * [Web](#web)
   * [Misc applications](#misc-applications)
     * [Social](#social)
     * [Graphisme](#graphisme)
@@ -306,6 +309,10 @@ Makes the window semi-transparent when moving or resizing.
 gext install transparent-window-moving@noobsai.github.com
 ```
 
+### Theme
+
+TODO
+
 ## Dev
 
 ### Git
@@ -343,6 +350,14 @@ Tool to manage the JetBrains IDEs.
 curl -fsSL https://raw.githubusercontent.com/nagygergo/jetbrains-toolbox-install/master/jetbrains-toolbox.sh | bash && /opt/jetbrains-toolbox/jetbrains-toolbox
 ```
 
+### Python
+
+TODO
+
+### Web
+
+TODO
+
 ## Misc applications
 
 ### Social
@@ -357,7 +372,6 @@ sudo pacman -S discord
 sudo pacman -S gimp
 ```
 
-
 ### Utilities
 
 ```sh
@@ -366,5 +380,3 @@ sudo pacman -S wl-clipboard
 # allows to manage fonts
 sudo pacman -S font-manager
 ```
-
-
