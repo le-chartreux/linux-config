@@ -104,7 +104,61 @@ rm -r glacial-indifference.zip glacial-indifference
 pipx install gnome-extensions-cli --system-site-packages 
 ```
 
-#### Resource Monitor
+#### [Blur my Shell](https://github.com/aunetx/blur-my-shell)
+
+Add blur effect to Gnome!
+
+```sh
+gext install blur-my-shell@aunetx
+dconf write /org/gnome/shell/extensions/blur-my-shell/panel/blur false
+dconf write /org/gnome/shell/extensions/blur-my-shell/overview/style-components 3
+```
+
+#### [Caffeine](https://github.com/eonpatapon/gnome-shell-extension-caffeine)
+
+To pause screen saving.
+
+```sh
+gext install caffeine@patapon.info
+```
+
+#### [Dash to Dock](https://micheleg.github.io/dash-to-dock/)
+
+A nice dock.
+
+```sh
+gext install dash-to-dock@micxgx.gmail.com
+dconf write /org/gnome/shell/extensions/dash-to-dock/multi-monitor true
+dconf write /org/gnome/shell/extensions/dash-to-dock/intellihide-mode "'ALL_WINDOWS'"
+dconf write /org/gnome/shell/extensions/dash-to-dock/animation-time 0.1
+dconf write /org/gnome/shell/extensions/dash-to-dock/hide-delay 0.1
+dconf write /org/gnome/shell/extensions/dash-to-dock/show-apps-at-top true
+dconf write /org/gnome/shell/extensions/dash-to-dock/show-trash false
+dconf write /org/gnome/shell/extensions/dash-to-dock/hot-keys false
+dconf write /org/gnome/shell/extensions/dash-to-dock/middle-click-action "'launch'"
+dconf write /org/gnome/shell/extensions/dash-to-dock/shift-middle-click-action "'quit'"
+dconf write /org/gnome/shell/extensions/dash-to-dock/custom-theme-shrink true
+dconf write /org/gnome/shell/extensions/dash-to-dock/disable-overview-on-startup true
+dconf write /org/gnome/shell/extensions/dash-to-dock/apply-custom-theme false
+dconf write /org/gnome/shell/extensions/dash-to-dock/custom-background-color true
+dconf write /org/gtk/gtk4/settings/color-chooser/selected-color "(true, 0.0, 0.0, 0.0, 1.0)"
+dconf write /org/gnome/shell/extensions/dash-to-dock/transparency-mode "'DYNAMIC'"
+dconf write /org/gnome/shell/extensions/dash-to-dock/min-alpha 0
+dconf write /org/gnome/shell/extensions/dash-to-dock/max-alpha 1
+dconf write 
+```
+
+#### [Disable unredirect fullscreen windows](https://github.com/kazysmaster/gnome-shell-extension-disable-unredirect)
+
+For glitches on fullscreen (e.g. with the dock not hiding).
+
+```sh
+gext install unredirect@vaina.lt
+```
+
+#### [Resource Monitor](https://github.com/0ry0n/Resource_Monitor/)
+
+Show some useful information about the system.
 
 ```sh
 gext install Resource_Monitor@Ory0n
@@ -124,12 +178,9 @@ dconf write /com/github/Ory0n/Resource_Monitor/thermalgputemperaturestatus false
 
 ```sh
 # visual extensions
-gext install blur-my-shell@aunetx gnome-ui-tune@itstime.tech impatience@gfxmonk.net just-perfection-desktop@just-perfection panel-corners@aunetx rounded-window-corners@yilozt transparent-window-moving@noobsai.github.com
+gext install gnome-ui-tune@itstime.tech impatience@gfxmonk.net just-perfection-desktop@just-perfection panel-corners@aunetx rounded-window-corners@yilozt transparent-window-moving@noobsai.github.com
 # useful extensions
-gext install caffeine@patapon.info dash-to-dock@micxgx.gmail.com no-overview@fthx freon@UshakovVasilii_Github.yahoo.com runcat@kolesnikov.se
-# fixes
-## for glitches on fullscreen (eg with the dock not hiding)
-gext install unredirect@vaina.lt
+gext install no-overview@fthx freon@UshakovVasilii_Github.yahoo.com runcat@kolesnikov.se
 ```
 
 ## Dev
