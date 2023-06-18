@@ -11,7 +11,7 @@ I recommend that you set up the tools from the [Utilities](#utilities) and [Inst
   * [Table of contents](#table-of-contents)
   * [Global](#global)
     * [Installers](#installers)
-      * [Pacman](#pacman)
+      * [pacman](#pacman)
       * [Snap](#snap)
       * [AUR](#aur)
       * [Pamac](#pamac)
@@ -42,7 +42,7 @@ I recommend that you set up the tools from the [Utilities](#utilities) and [Inst
 
 ### Installers
 
-#### [Pacman](https://wiki.archlinux.org/title/Pacman)
+#### [pacman](https://wiki.archlinux.org/title/Pacman)
 
 The Arch package manager. 
 
