@@ -49,6 +49,7 @@ To ensure a smooth setup, I recommend starting with the tools from the [Utilitie
     * [Web](#web)
   * [Misc applications](#misc-applications)
     * [Social](#social)
+      * [Discord](#discord)
     * [Graphisme](#graphisme)
     * [Utilities](#utilities)
 <!-- TOC -->
