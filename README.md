@@ -97,9 +97,9 @@ Package installer for Python. Even if you're not a Python developer, a lot of ap
 python -m ensurepip --upgrade
 ```
 
-#### Pipx
+#### [pipx](https://pypa.github.io/pipx/)
 
-Pipx is the recommended way to install Python applications from pip. It allows you to no mess up your system Python environment by installing each app inside a virtual environment.
+The recommended way to install Python applications from pip. Allows to no mess up your system Python environment by installing each app inside an isolated virtual environment.
 
 ```sh
 python3 -m pip install --user pipx
