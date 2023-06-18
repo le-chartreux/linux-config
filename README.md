@@ -257,7 +257,7 @@ Show some useful information about the system.
 
 ```sh
 gext install Resource_Monitor@Ory0n
-dconf write /com/github/Ory0n/Resource_Monitor/cpufrequencystatus false
+dconf write /com/github/Ory0n/Resource_Monitor/cpustatus false
 dconf write /com/github/Ory0n/Resource_Monitor/decimalsstatus true
 dconf write /com/github/Ory0n/Resource_Monitor/diskspacestatus false
 dconf write /com/github/Ory0n/Resource_Monitor/diskstatsstatus false
