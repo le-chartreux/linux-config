@@ -198,7 +198,6 @@ dconf write /org/gtk/gtk4/settings/color-chooser/selected-color "(true, 0.0, 0.0
 dconf write /org/gnome/shell/extensions/dash-to-dock/transparency-mode "'DYNAMIC'"
 dconf write /org/gnome/shell/extensions/dash-to-dock/min-alpha 0
 dconf write /org/gnome/shell/extensions/dash-to-dock/max-alpha 1
-dconf write 
 ```
 
 #### [Disable unredirect fullscreen windows](https://github.com/kazysmaster/gnome-shell-extension-disable-unredirect)
