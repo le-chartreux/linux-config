@@ -42,7 +42,9 @@ I recommend that you set up the tools from the [Utilities](#utilities) and [Inst
 
 ### Installers
 
-#### Pacman
+#### [Pacman](https://wiki.archlinux.org/title/Pacman)
+
+The Arch package manager. 
 
 ```sh
 # selecting fastest mirror
