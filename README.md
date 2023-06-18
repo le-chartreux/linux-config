@@ -141,7 +141,7 @@ font-manager --install glacial-indifference/*.otf
 rm -r glacial-indifference.zip glacial-indifference
 ```
 
-## Gnome 4
+## [Gnome 4](https://www.gnome.org/)
 
 ### Extensions
 
