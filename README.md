@@ -325,10 +325,19 @@ Then add it [here](https://github.com/settings/ssh/new).
 
 ### Applications
 
+#### [Visual Studio Code](https://code.visualstudio.com/)
+
+Best text editor in my opinion: nice looking, easy and tons of plugins.
+
 ```sh
-# codium
-sudo pacman -S code
-# jetbrains toolbox
+sudo snap install code --classic
+```
+
+#### [JetBrains Toolbox App](https://www.jetbrains.com/toolbox-app/)
+
+Tool to manage the JetBrains IDEs.
+
+```sh
 curl -fsSL https://raw.githubusercontent.com/nagygergo/jetbrains-toolbox-install/master/jetbrains-toolbox.sh | bash && /opt/jetbrains-toolbox/jetbrains-toolbox
 ```
 
