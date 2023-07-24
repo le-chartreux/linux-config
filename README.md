@@ -332,7 +332,13 @@ gsettings set org.gnome.desktop.interface cursor-theme Sweet-cursors
 
 ### Keybindings
 
-TODO
+```sh
+gsettings set org.gnome.desktop.wm.keybindings close "['<Shift><Super>q']"
+gsettings set org.gnome.desktop.wm.keybindings begin-move "['<Super>m']"
+gsettings set org.gnome.desktop.wm.keybindings maximize "['<Super>Up']"
+# use parameters to add 'open terminal' on super+return
+# use parameters to add 'disable F1' on F1 (command ':')
+```
 
 ## Dev
 
