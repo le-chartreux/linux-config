@@ -45,6 +45,8 @@ To ensure a smooth setup, I recommend starting with the tools from the [Utilitie
     * [Applications](#applications)
       * [Visual Studio Code](#visual-studio-code)
       * [JetBrains Toolbox App](#jetbrains-toolbox-app)
+    * [Zsh](#zsh)
+      * [Oh My Zsh](#oh-my-zsh)
     * [Python](#python)
     * [Web](#web)
   * [Misc applications](#misc-applications)
@@ -358,6 +360,16 @@ Tool to manage the JetBrains IDEs.
 ```sh
 curl -fsSL https://raw.githubusercontent.com/nagygergo/jetbrains-toolbox-install/master/jetbrains-toolbox.sh | bash && /opt/jetbrains-toolbox/jetbrains-toolbox
 ```
+
+### [Zsh](https://wiki.archlinux.org/title/Zsh)
+
+Shell with a lot of cool features and customization.
+
+#### [Oh My Zsh](https://ohmyz.sh/)
+
+Framework to manage [Zsh](https://wiki.archlinux.org/title/Zsh) configuration.
+
+TODO
 
 ### [Python](https://www.python.org/)
 
