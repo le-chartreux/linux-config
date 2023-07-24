@@ -48,6 +48,7 @@ To ensure a smooth setup, I recommend starting with the tools from the [Utilitie
     * [Zsh](#zsh)
       * [Oh My Zsh](#oh-my-zsh)
     * [Python](#python)
+      * [Poetry](#poetry)
     * [Web](#web)
   * [Misc applications](#misc-applications)
     * [Social](#social)
@@ -373,7 +374,14 @@ TODO
 
 ### [Python](https://www.python.org/)
 
+#### [Poetry](https://python-poetry.org/)
+
+Python project manager (see it as npm but for Python).
+
+```sh
+pipx install poetry
 TODO
+```
 
 ### Web
 
