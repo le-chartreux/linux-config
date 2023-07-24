@@ -319,7 +319,16 @@ gext install transparent-window-moving@noobsai.github.com
 
 ### Theme
 
-TODO
+```sh
+# Sweet-Dark-v40
+gnomelooks get https://www.gnome-look.org/p/1253385/
+gsettings set org.gnome.desktop.interface gtk-theme Sweet-Dark-v40
+gsettings set org.gnome.desktop.wm.preferences theme Sweet-Dark-v40
+gsettings set org.gnome.shell.extensions.user-theme name Sweet-Dark-v40
+# Sweet Cursor
+gnomelooks get https://www.gnome-look.org/p/1393084/
+gsettings set org.gnome.desktop.interface cursor-theme Sweet-cursors
+```
 
 ### Keybindings
 
@@ -424,4 +433,6 @@ pamac build protonvpn
 sudo pacman -S wl-clipboard
 # allows to manage fonts
 sudo pacman -S font-manager
+# allows to install gnome themes
+pipx install gnomelooks
 ```
