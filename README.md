@@ -358,7 +358,6 @@ wl-copy < ~/.ssh/id_*.pub
 ```
 Then add it [here](https://github.com/settings/ssh/new).
 
-
 ### Applications
 
 #### [Visual Studio Code](https://code.visualstudio.com/)
