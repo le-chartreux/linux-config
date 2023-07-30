@@ -2,7 +2,7 @@
 
 My personal configuration for [Manjaro](https://manjaro.org/) 22.1.3 minimal with [Gnome 4](https://www.gnome.org/) desktop. You can download the official ISO [here](https://download.manjaro.org/gnome/22.1.3/manjaro-gnome-22.1.3-minimal-230529-linux61.iso). This branch is unmaintained since I left Manjaro for Ubuntu on 30 July 2023, Manjaro was too unstable imo.
 
-The configuration consists of Shell commands, making it easy to install and customize without having to navigate through settings. Simply copy and paste the commands below. Please note that a part of the GitHub configuration requires actions to be performed on the GitHub website, which is not covered by the Shell commands provided here.
+The configuration consists of Shell commands, making it easy to install and customize without having to navigate through settings. Simply copy and paste the commands below. Please note that some part still needs to be done on graphical utilities.
 
 To ensure a smooth setup, I recommend starting with the tools from the [Utilities](#utilities) and [Installers](#installers) sections as they may be required for other parts of the configuration.
 
