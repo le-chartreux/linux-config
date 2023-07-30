@@ -356,6 +356,7 @@ git config --global core.editor nano
 ssh-keygen -t ed25519 -C "your-gh-email@something"
 wl-copy < ~/.ssh/id_*.pub
 ```
+
 Then add it [here](https://github.com/settings/ssh/new).
 
 ### Applications
