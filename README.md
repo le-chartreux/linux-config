@@ -150,10 +150,6 @@ sudo pacman -S aspell-fr mythes-fr
 #### Fonts
 
 ```sh
-# Emojis
-sudo pacman -S noto-fonts-emoji
-# Microsoft
-sudo pamac build ttf-ms-win11-auto
 # glacial indifference (a cool font)
 wget https://www.fontsquirrel.com/fonts/download/glacial-indifference --output-document=glacial-indifference.zip
 unzip glacial-indifference.zip -d glacial-indifference
