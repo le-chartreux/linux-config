@@ -237,7 +237,7 @@ dconf write /org/gnome/shell/extensions/freon/group-voltage false
 
 #### [Gnome 4x UI Improvements](https://github.com/axxapy/gnome-ui-tune)
 
-Improve the overview, mainly bigger workspaces thumbnails and search box hidden when unused. 
+Improve the overview, mainly bigger workspaces thumbnails and search box hidden when unused.
 
 ```sh
 gext install gnome-ui-tune@itstime.tech
