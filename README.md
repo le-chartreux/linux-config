@@ -344,7 +344,7 @@ gsettings set org.gnome.desktop.wm.keybindings maximize "['<Super>Up']"
 
 ### [Git](https://git-scm.com/)
 
-```
+```sh
 git config --global user.name "XXX"
 git config --global user.email "XXX@XXX"
 git config --global core.editor nano
