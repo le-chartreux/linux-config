@@ -387,21 +387,6 @@ Framework to manage [Zsh](https://wiki.archlinux.org/title/Zsh) configuration.
 
 TODO
 
-### [Python](https://www.python.org/)
-
-#### [Poetry](https://python-poetry.org/)
-
-Python project manager (see it as npm but for Python).
-
-```sh
-pipx install poetry
-TODO
-```
-
-### Web
-
-TODO
-
 ## Misc applications
 
 ### Social
