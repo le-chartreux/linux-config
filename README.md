@@ -1,6 +1,6 @@
-# Configuration for Manjaro 22.1.3 Gnome minimal
+# Configuration for Ubuntu 23.04 Gnome minimal
 
-My personal configuration for [Manjaro](https://manjaro.org/) 22.1.3 minimal with [Gnome 4](https://www.gnome.org/) desktop. You can download the official ISO [here](https://download.manjaro.org/gnome/22.1.3/manjaro-gnome-22.1.3-minimal-230529-linux61.iso). This branch is unmaintained since I left Manjaro for Ubuntu on 30 July 2023, Manjaro was too unstable imo.
+My personal configuration for [Ubuntu](https://ubuntu.com/) 23.04 minimal with [Gnome 4](https://www.gnome.org/) desktop. You can download the official ISO [here](https://ubuntu.com/download/desktop). This configuration was originaly for [Manjaro](https://manjaro.org/) 22.1.3 minimal with [Gnome 4](https://www.gnome.org/) desktop, but I left Manjaro for Ubuntu on 30 July 2023 because Manjaro was too unstable in my opinion. You can find a git tag ([v0.1](https://github.com/le-chartreux/linux-config/tree/v0.1)) at the last commit of the Manjaro support.
 
 The configuration consists of Shell commands, making it easy to install and customize without having to navigate through settings. Simply copy and paste the commands below. Please note that some part still needs to be done on graphical utilities.
 
@@ -9,70 +9,65 @@ To ensure a smooth setup, I recommend starting with the tools from the [Utilitie
 ## Table of contents
 
 <!-- TOC -->
-* [Configuration for Manjaro 22.1.3 Gnome minimal](#configuration-for-manjaro-2213-gnome-minimal)
-  * [Table of contents](#table-of-contents)
-  * [Global](#global)
-    * [Installers](#installers)
-      * [pacman](#pacman)
-      * [snap](#snap)
-      * [AUR](#aur)
-      * [Pamac](#pamac)
-      * [pip](#pip)
-      * [pipx](#pipx)
-    * [System](#system)
-    * [Text](#text)
-      * [Spellcheckers](#spellcheckers)
-      * [Fonts](#fonts)
-  * [Gnome 4](#gnome-4)
-    * [Extensions](#extensions)
-      * [Blur my Shell](#blur-my-shell)
-      * [Caffeine](#caffeine)
-      * [Dash to Dock](#dash-to-dock)
-      * [Disable unredirect fullscreen windows](#disable-unredirect-fullscreen-windows)
-      * [Freon](#freon)
-      * [Gnome 4x UI Improvements](#gnome-4x-ui-improvements)
-      * [Just Perfection](#just-perfection)
-      * [Panel corners](#panel-corners)
-      * [Resource Monitor](#resource-monitor)
-      * [Rounded Window Corners](#rounded-window-corners)
-      * [RunCat](#runcat)
-      * [Transparent Window Moving](#transparent-window-moving)
-    * [Theme](#theme)
-    * [Keybindings](#keybindings)
-  * [Dev](#dev)
-    * [Git](#git)
-    * [GitHub](#github)
-    * [Applications](#applications)
-      * [Visual Studio Code](#visual-studio-code)
-      * [JetBrains Toolbox App](#jetbrains-toolbox-app)
-    * [Zsh](#zsh)
-      * [Oh My Zsh](#oh-my-zsh)
-    * [Python](#python)
-      * [Poetry](#poetry)
-    * [Web](#web)
-  * [Misc applications](#misc-applications)
-    * [Social](#social)
-      * [Discord](#discord)
-    * [Graphisme](#graphisme)
-      * [Gimp](#gimp)
-    * [VPN](#vpn)
-      * [Proton VPN](#proton-vpn)
-    * [Utilities](#utilities)
-<!-- TOC -->
+
+- [Configuration for Ubuntu 23.04 Gnome minimal](#configuration-for-ubuntu-2304-gnome-minimal)
+  - [Table of contents](#table-of-contents)
+  - [Global](#global)
+    - [Installers](#installers)
+      - [apt](#apt)
+      - [snap](#snap)
+      - [pip](#pip)
+      - [pipx](#pipx)
+    - [System](#system)
+    - [Text](#text)
+      - [Spellcheckers](#spellcheckers)
+      - [Fonts](#fonts)
+  - [Gnome 4](#gnome-4)
+    - [Extensions](#extensions)
+      - [Blur my Shell](#blur-my-shell)
+      - [Caffeine](#caffeine)
+      - [Dash to Dock](#dash-to-dock)
+      - [Disable unredirect fullscreen windows](#disable-unredirect-fullscreen-windows)
+      - [Freon](#freon)
+      - [Gnome 4x UI Improvements](#gnome-4x-ui-improvements)
+      - [Just Perfection](#just-perfection)
+      - [Panel corners](#panel-corners)
+      - [Resource Monitor](#resource-monitor)
+      - [Rounded Window Corners](#rounded-window-corners)
+      - [RunCat](#runcat)
+      - [Transparent Window Moving](#transparent-window-moving)
+    - [Theme](#theme)
+    - [Keybindings](#keybindings)
+  - [Dev](#dev)
+    - [Git](#git)
+    - [GitHub](#github)
+    - [Applications](#applications)
+      - [Visual Studio Code](#visual-studio-code)
+      - [JetBrains Toolbox App](#jetbrains-toolbox-app)
+    - [Zsh](#zsh)
+      - [Oh My Zsh](#oh-my-zsh)
+  - [Misc applications](#misc-applications)
+    - [Social](#social)
+      - [Discord](#discord)
+    - [Graphisme](#graphisme)
+      - [Gimp](#gimp)
+    - [VPN](#vpn)
+      - [Proton VPN](#proton-vpn)
+    - [Utilities](#utilities)
+
+<!-- /TOC -->
 
 ## Global
 
 ### Installers
 
-#### [pacman](https://wiki.archlinux.org/title/Pacman)
+#### apt
 
-The package manager for [Arch Linux](https://archlinux.org/).
+The package manager for [Debian](https://www.debian.org/)-based distro (so Ubuntu too).
 
 ```sh
-# selecting fastest mirror
-sudo pacman-mirrors --fasttrack
-# updating system
-sudo pacman -Syu
+# update system
+sudo apt update && sudo apt upgrade && sudo apt autoremove
 ```
 
 #### [snap](https://ubuntu.com/core/services/guide/snaps-intro)
@@ -80,35 +75,8 @@ sudo pacman -Syu
 The official app store provided by [Canonical](https://canonical.com/), where developers can deploy their applications.
 
 ```sh
-# install
-sudo pacman -S snapd
-sudo systemctl enable --now snapd.socket
-# enable classic snap support
-sudo ln -s /var/lib/snapd/snap /snap
-# snap inside pamac
-pamac install libpamac-snap-plugin
-sudo sed -i 's/#EnableSnap/EnableSnap/g' /etc/pamac.conf
-```
-
-#### [AUR](https://wiki.archlinux.org/title/Arch_User_Repository)
-
-Community-driven repository maintained for [Arch Linux](https://archlinux.org/).
-
-```sh
-# AUR inside pamac
-sudo sed -i 's/#EnableAUR/EnableAUR/g' /etc/pamac.conf
-sudo sed -i 's/#CheckAURUpdates/CheckAURUpdates/g' /etc/pamac.conf
-```
-
-#### [Pamac](https://wiki.manjaro.org/index.php/Pamac)
-
-The package manager used in [Manjaro Linux](https://manjaro.org/).
-
-```sh
-# disable icon when no update
-sudo sed -i 's/#NoUpdateHideIcon/NoUpdateHideIcon/g' /etc/pamac.conf
-# remove orphaned packages
-sudo pamac remove -o
+# update
+sudo snap refresh
 ```
 
 #### [pip](https://pypi.org/project/pip/)
@@ -116,7 +84,7 @@ sudo pamac remove -o
 Package installer for [Python](https://www.python.org/). Many applications rely on it, install it to use them.
 
 ```sh
-python -m ensurepip --upgrade
+sudo apt install python3-pip
 ```
 
 #### [pipx](https://pypa.github.io/pipx/)
@@ -124,8 +92,7 @@ python -m ensurepip --upgrade
 The recommended method for installing [Python](https://www.python.org/) applications from [pip](#pip). It provides the ability to install each application inside a separate isolated virtual environment, preventing any conflicts or interference with your system's [Python](https://www.python.org/) environment. This approach helps keep your system clean and organized while managing [Python](https://www.python.org/) applications.
 
 ```sh
-python3 -m pip install --user pipx
-python3 -m pipx ensurepath
+sudo apt install pipx
 ```
 
 ### System
@@ -142,9 +109,12 @@ sudo systemctl start fstrim.timer
 
 ```sh
 # english
-sudo pacman -S aspell-en libmythes mythes-en languagetool
+sudo apt install aspell-en
+sudo apt install libmythes-1.2-0
+sudo apt install mythes-en-us 
+sudo snap install languagetool
 # french
-sudo pacman -S aspell-fr mythes-fr
+sudo apt install aspell-fr mythes-fr
 ```
 
 #### Fonts
@@ -162,6 +132,8 @@ rm -r glacial-indifference.zip glacial-indifference
 ### Extensions
 
 ```sh
+# tool to manage extensions
+sudo apt install gnome-tweaks
 # tool to install from cli
 pipx install gnome-extensions-cli --system-site-packages 
 ```
@@ -401,7 +373,7 @@ betterdiscordctl install
 #### [Gimp](https://www.gimp.org/)
 
 ```sh
-sudo pacman -S gimp
+sudo apt install gimp
 ```
 
 ### VPN
@@ -417,9 +389,9 @@ pamac build protonvpn
 
 ```sh
 # allows to copy texts and images to clipboard in command line
-sudo pacman -S wl-clipboard
+sudo apt install wl-clipboard
 # allows to manage fonts
-sudo pacman -S font-manager
+sudo apt install font-manager
 # allows to install gnome themes
 pipx install gnomelooks
 ```
