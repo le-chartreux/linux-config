@@ -328,8 +328,8 @@ gsettings set org.gnome.desktop.interface cursor-theme Sweet-cursors
 gsettings set org.gnome.desktop.wm.keybindings close "['<Shift><Super>q']"
 gsettings set org.gnome.desktop.wm.keybindings begin-move "['<Super>m']"
 gsettings set org.gnome.desktop.wm.keybindings maximize "['<Super>Up']"
-# use parameters to add 'open terminal' on super+return
-# use parameters to add 'disable F1' on F1 (command ':')
+gsettings set org.gnome.settings-daemon.plugins.media-keys terminal "['<Super>Return']"
+gsettings set org.gnome.settings-daemon.plugins.media-keys help "[]"
 ```
 
 ## Dev
