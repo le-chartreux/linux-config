@@ -53,8 +53,6 @@ To ensure a smooth setup, I recommend starting with the tools from the [Utilitie
       - [Discord](#discord)
     - [Graphisme](#graphisme)
       - [Gimp](#gimp)
-    - [VPN](#vpn)
-      - [Proton VPN](#proton-vpn)
     - [Utilities](#utilities)
 
 <!-- /TOC -->
@@ -400,15 +398,6 @@ betterdiscordctl -i snap install
 
 ```sh
 sudo apt install gimp
-```
-
-### VPN
-
-#### [Proton VPN](https://protonvpn.com/)
-
-```sh
-pamac update --force-refresh
-pamac build protonvpn
 ```
 
 ### Utilities
