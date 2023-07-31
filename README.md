@@ -45,7 +45,7 @@ To ensure a smooth setup, I recommend starting with the tools from the [Utilitie
     - [GitHub](#github)
     - [Applications](#applications)
       - [Visual Studio Code](#visual-studio-code)
-      - [JetBrains Toolbox App](#jetbrains-toolbox-app)
+      - [Pycharm pro](#pycharm-pro)
     - [Zsh](#zsh)
       - [Oh My Zsh](#oh-my-zsh)
   - [Misc applications](#misc-applications)
@@ -357,12 +357,12 @@ Best text editor in my opinion: nice looking, easy and tons of plugins.
 sudo snap install code --classic
 ```
 
-#### [JetBrains Toolbox App](https://www.jetbrains.com/toolbox-app/)
+#### [Pycharm pro](https://www.jetbrains.com/pycharm/)
 
-Tool to manage the JetBrains IDEs.
+Best Python IDE in my opinion.
 
 ```sh
-curl -fsSL https://raw.githubusercontent.com/nagygergo/jetbrains-toolbox-install/master/jetbrains-toolbox.sh | bash && /opt/jetbrains-toolbox/jetbrains-toolbox
+sudo snap install pycharm-professional --classic
 ```
 
 ### [Zsh](https://wiki.archlinux.org/title/Zsh)
