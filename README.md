@@ -24,6 +24,7 @@ To ensure a smooth setup, I recommend starting with the tools from the [Utilitie
       - [Spellcheckers](#spellcheckers)
       - [Fonts](#fonts)
   - [Gnome 4](#gnome-4)
+    - [Vanilla desktop](#vanilla-desktop)
     - [Extensions](#extensions)
       - [Blur my Shell](#blur-my-shell)
       - [Caffeine](#caffeine)
@@ -137,6 +138,16 @@ rm -r glacial-indifference.zip glacial-indifference
 ```
 
 ## [Gnome 4](https://www.gnome.org/)
+
+### Vanilla desktop
+
+To get the vanilla Gnome 4 desktop (without the Ubuntu-look) on top of which the riced desktop will be build, execute the following commands:
+
+```sh
+sudo apt install gnome-session
+sudo apt install gnome-software
+# then reboot your computer and select 'Gnome' as a desktop at the logging page instead of 'Ubuntu'
+```
 
 ### Extensions
 
