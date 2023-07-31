@@ -382,10 +382,12 @@ TODO
 #### [Discord](https://discord.com/)
 
 ```sh
-sudo pacman -S discord
+sudo snap install discord
 # betterdiscord
-sudo pamac build betterdiscordctl
-betterdiscordctl install
+sudo add-apt-repository ppa:chronobserver/betterdiscordctl
+sudo apt update
+sudo apt install betterdiscordctl
+betterdiscordctl -i snap install
 ```
 
 ### Graphisme
@@ -409,8 +411,8 @@ pamac build protonvpn
 
 ```sh
 # allows to get content from the web
-# I had to use snap because with apt there was some conflicts on dependencies
-sudo snap install curl
+# maybe you will need to downgrade libcurl before: sudo apt install libcurl4=7.88.1-8ubuntu2
+sudo apt install curl
 # allows to copy texts and images to clipboard in command line
 sudo apt install wl-clipboard
 # allows to manage fonts
