@@ -202,8 +202,9 @@ dconf write /org/gnome/shell/extensions/dash-to-dock/custom-theme-shrink true
 dconf write /org/gnome/shell/extensions/dash-to-dock/disable-overview-on-startup true
 dconf write /org/gnome/shell/extensions/dash-to-dock/apply-custom-theme false
 dconf write /org/gnome/shell/extensions/dash-to-dock/custom-background-color true
-dconf write /org/gtk/gtk4/settings/color-chooser/selected-color "(true, 0.0, 0.0, 0.0, 1.0)"
+dconf write /org/gnome/shell/extensions/dash-to-dock/background-color "'rgb(14,13,31)'"
 dconf write /org/gnome/shell/extensions/dash-to-dock/transparency-mode "'DYNAMIC'"
+dconf write /org/gnome/shell/extensions/dash-to-dock/customize-alphas true
 dconf write /org/gnome/shell/extensions/dash-to-dock/min-alpha 0
 dconf write /org/gnome/shell/extensions/dash-to-dock/max-alpha 1
 ```
