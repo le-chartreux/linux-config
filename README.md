@@ -16,6 +16,7 @@ To ensure a smooth setup, I recommend starting with the tools from the [Utilitie
     - [Installers](#installers)
       - [apt](#apt)
       - [snap](#snap)
+      - [Gnome Software](#gnome-software)
       - [pip](#pip)
       - [pipx](#pipx)
     - [System](#system)
@@ -77,6 +78,14 @@ The official app store provided by [Canonical](https://canonical.com/), where de
 ```sh
 # update
 sudo snap refresh
+```
+
+#### [Gnome Software](https://apps.gnome.org/app/org.gnome.Software/)
+
+The official Gnome installer, that looks better than the [Canonical's snap store](https://ubuntu.com/core/docs/store-overview) while providing exacly the same apps.
+
+```sh
+sudo apt install gnome-software
 ```
 
 #### [pip](https://pypi.org/project/pip/)
