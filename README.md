@@ -408,6 +408,9 @@ pamac build protonvpn
 ### Utilities
 
 ```sh
+# allows to get content from the web
+# I had to use snap because with apt there was some conflicts on dependencies
+sudo snap install curl
 # allows to copy texts and images to clipboard in command line
 sudo apt install wl-clipboard
 # allows to manage fonts
