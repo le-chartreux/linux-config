@@ -25,6 +25,7 @@ To ensure a smooth setup, I recommend starting with the tools from the [Utilitie
       - [Fonts](#fonts)
   - [Gnome 4](#gnome-4)
     - [Vanilla desktop](#vanilla-desktop)
+    - [Button layout](#button-layout)
     - [Extensions](#extensions)
       - [Blur my Shell](#blur-my-shell)
       - [Caffeine](#caffeine)
@@ -145,6 +146,14 @@ To get the vanilla Gnome 4 desktop (without the Ubuntu-look) on top of which the
 sudo apt install gnome-session
 sudo apt install gnome-software
 # then reboot your computer and select 'Gnome' as a desktop at the logging page instead of 'Ubuntu'
+```
+
+### Button layout
+
+Get the minimize and maximize buttons on the windows.
+
+```sh
+gsettings set org.gnome.desktop.wm.preferences button-layout "'appmenu:minimize,maximize,close'"
 ```
 
 ### Extensions
