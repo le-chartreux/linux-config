@@ -221,6 +221,10 @@ dconf write /org/gnome/shell/extensions/freon/show-voltage false
 dconf write /org/gnome/shell/extensions/freon/show-power false
 dconf write /org/gnome/shell/extensions/freon/group-rotationrate false
 dconf write /org/gnome/shell/extensions/freon/group-voltage false
+# freon relies on lm-sensors
+sudo apt install lm-sensors
+sudo sensors-detect  # hit enter and type 'yes' at the end to save to /etc/modules
+sudo /etc/init.d/kmod start
 ```
 
 #### [Gnome 4x UI Improvements](https://github.com/axxapy/gnome-ui-tune)
