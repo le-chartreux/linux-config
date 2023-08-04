@@ -366,6 +366,10 @@ gsettings set org.gnome.desktop.wm.keybindings begin-move "['<Super>m']"
 gsettings set org.gnome.desktop.wm.keybindings maximize "['<Super>Up']"
 gsettings set org.gnome.settings-daemon.plugins.media-keys terminal "['<Super>Return']"
 gsettings set org.gnome.settings-daemon.plugins.media-keys help "[]"
+# manually add in settings/keyboard/custom shortcuts/ the following:
+# - name: 'open monitor'
+# - command: 'gnome-system-monitor'
+# - shortcut: Ctrl + Shift + Escape  
 ```
 
 ## Dev
