@@ -154,6 +154,8 @@ sudo apt install aspell-fr mythes-fr
 #### Fonts
 
 ```sh
+# app to manage fonts
+sudo apt install font-manager
 # glacial indifference (a cool font)
 wget https://www.fontsquirrel.com/fonts/download/glacial-indifference --output-document=glacial-indifference.zip
 unzip glacial-indifference.zip -d glacial-indifference
@@ -473,6 +475,4 @@ sudo apt install gimp
 sudo apt install curl
 # allows to copy texts and images to clipboard in command line
 sudo apt install wl-clipboard
-# allows to manage fonts
-sudo apt install font-manager
 ```
