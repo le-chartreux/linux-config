@@ -54,7 +54,7 @@ To ensure a seamless setup experience, I recommend commencing with the tools fea
     - [GitHub](#github)
     - [Applications](#applications)
       - [Visual Studio Code](#visual-studio-code)
-      - [Pycharm pro](#pycharm-pro)
+      - [PyCharm Professional](#pycharm-professional)
     - [Zsh](#zsh)
       - [Oh My Zsh](#oh-my-zsh)
   - [Misc applications](#misc-applications)
@@ -421,34 +421,38 @@ For a custom shortcut that opens the system monitor, to mimic Windows 10 behavio
 
 ### [Git](https://git-scm.com/)
 
+Configure your global Git settings:
+
 ```sh
-git config --global user.name "XXX"
-git config --global user.email "XXX@XXX"
+git config --global user.name "Your Name"
+git config --global user.email "your.email@example.com"
 git config --global core.editor nano
 ```
 
 ### [GitHub](https://github.com/)
+
+Generate an SSH key and add it to your GitHub account:
 
 ```sh
 ssh-keygen -t ed25519 -C "your-gh-email@something"
 wl-copy < ~/.ssh/id_*.pub
 ```
 
-Then add it [here](https://github.com/settings/ssh/new).
+Then paste the copied key [here](https://github.com/settings/ssh/new).
 
 ### Applications
 
 #### [Visual Studio Code](https://code.visualstudio.com/)
 
-Best text editor in my opinion: nice looking, easy and tons of plugins.
+My preferred text editor: visually appealing, user-friendly, and enriched with numerous plugins.
 
 ```sh
 sudo snap install code --classic
 ```
 
-#### [Pycharm pro](https://www.jetbrains.com/pycharm/)
+#### [PyCharm Professional](https://www.jetbrains.com/pycharm/)
 
-Best Python IDE in my opinion.
+My preferred Python IDE:
 
 ```sh
 sudo snap install pycharm-professional --classic
