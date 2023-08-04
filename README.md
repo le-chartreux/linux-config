@@ -57,10 +57,10 @@ To ensure a seamless setup experience, I recommend commencing with the tools fea
       - [PyCharm Professional](#pycharm-professional)
     - [Zsh](#zsh)
       - [Oh My Zsh](#oh-my-zsh)
-  - [Misc applications](#misc-applications)
+  - [Miscellaneous Applications](#miscellaneous-applications)
     - [Social](#social)
       - [Discord](#discord)
-    - [Graphisme](#graphisme)
+    - [Graphics](#graphics)
       - [Gimp](#gimp)
     - [Utilities](#utilities)
 
@@ -468,24 +468,28 @@ Framework to manage [Zsh](https://wiki.archlinux.org/title/Zsh) configuration.
 
 TODO
 
-## Misc applications
+## Miscellaneous Applications
 
 ### Social
 
 #### [Discord](https://discord.com/)
 
+Install Discord using Snap:
+
 ```sh
 sudo snap install discord
-# betterdiscord
+# Install BetterDiscord
 sudo add-apt-repository ppa:chronobserver/betterdiscordctl
 sudo apt update
 sudo apt install betterdiscordctl
 betterdiscordctl -i snap install
 ```
 
-### Graphisme
+### Graphics
 
 #### [Gimp](https://www.gimp.org/)
+
+GIMP is ugly and hard to learn, but it's a powerful graphics editing software:
 
 ```sh
 sudo apt install gimp
@@ -493,10 +497,13 @@ sudo apt install gimp
 
 ### Utilities
 
+Install various utility tools:
+
 ```sh
-# allows to get content from the web
-# maybe you will need to downgrade libcurl before: sudo apt install libcurl4=7.88.1-8ubuntu2
+# Install curl to fetch content from the web
+# If needed, you may have to downgrade libcurl before: sudo apt install libcurl4=7.88.1-8ubuntu2
 sudo apt install curl
-# allows to copy texts and images to clipboard in command line
+
+# Install wl-clipboard to copy text and images to clipboard from the command line
 sudo apt install wl-clipboard
 ```
