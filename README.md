@@ -1,8 +1,13 @@
 # Configuration for Ubuntu 23.04 Gnome minimal
 
-My personal configuration for [Ubuntu](https://ubuntu.com/) 23.04 minimal with [Gnome 4](https://www.gnome.org/) desktop. You can download the official ISO [here](https://ubuntu.com/download/desktop). This configuration was originaly for [Manjaro](https://manjaro.org/) 22.1.3 minimal with [Gnome 4](https://www.gnome.org/) desktop, but I left Manjaro for Ubuntu on 30 July 2023 because Manjaro was too unstable in my opinion. You can find a git tag ([v0.1](https://github.com/le-chartreux/linux-config/tree/v0.1)) at the last commit of the Manjaro support.
+My personal configuration for [Ubuntu](https://ubuntu.com/) 23.04 minimal with [Gnome 4](https://www.gnome.org/) desktop.
+You can download the official ISO [here](https://ubuntu.com/download/desktop).
+This configuration was originaly for [Manjaro](https://manjaro.org/) 22.1.3 minimal with [Gnome 4](https://www.gnome.org/) desktop, but I left Manjaro for Ubuntu on 30 July 2023 because Manjaro was too unstable in my opinion.
+You can find a git tag ([v0.1](https://github.com/le-chartreux/linux-config/tree/v0.1)) at the last commit of the Manjaro support.
 
-The configuration consists of Shell commands, making it easy to install and customize without having to navigate through settings. Simply copy and paste the commands below. Please note that some part still needs to be done on graphical utilities.
+The configuration consists of Shell commands, making it easy to install and customize without having to navigate through settings.
+Simply copy and paste the commands below.
+Please note that some part still needs to be done on graphical utilities.
 
 To ensure a smooth setup, I recommend starting with the tools from the [Utilities](#utilities) and [Installers](#installers) sections as they may be required for other parts of the configuration.
 
@@ -113,7 +118,8 @@ sudo apt install python3-pip
 
 #### [pipx](https://pypa.github.io/pipx/)
 
-The recommended method for installing [Python](https://www.python.org/) applications from [pip](#pip). It provides the ability to install each application inside a separate isolated virtual environment, preventing any conflicts or interference with your system's [Python](https://www.python.org/) environment. This approach helps keep your system clean and organized while managing [Python](https://www.python.org/) applications.
+The recommended method for installing [Python](https://www.python.org/) applications from [pip](#pip). It provides the ability to install each application inside a separate isolated virtual environment, preventing any conflicts or interference with your system's [Python](https://www.python.org/) environment.
+This approach helps keep your system clean and organized while managing [Python](https://www.python.org/) applications.
 
 ```sh
 sudo apt install pipx
@@ -242,7 +248,8 @@ gext install unredirect@vaina.lt
 
 #### [Freon](https://github.com/UshakovVasilii/gnome-shell-extension-freon)
 
-Display system temperatures (CPU, disk, video card), voltage and fan RPM. I use it to display the maximum temperature of the CPUs.
+Display system temperatures (CPU, disk, video card), voltage and fan RPM.
+I use it to display the maximum temperature of the CPUs.
 
 ```sh
 # freon relies on lm-sensors
