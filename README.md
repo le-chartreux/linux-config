@@ -352,7 +352,7 @@ pipx install gnomelooks
 gnomelooks get https://www.gnome-look.org/p/1253385/
 gsettings set org.gnome.desktop.interface gtk-theme Sweet-Dark-v40
 gsettings set org.gnome.desktop.wm.preferences theme Sweet-Dark-v40
-gsettings set org.gnome.shell.extensions.user-theme name Sweet-Dark-v40
+dconf write /org/gnome/shell/extensions/user-theme/name "'Sweet-Dark-v40'"
 # Sweet-cursors
 gnomelooks get https://www.gnome-look.org/p/1393084/
 gsettings set org.gnome.desktop.interface cursor-theme Sweet-cursors
