@@ -378,29 +378,44 @@ gsettings set org.gnome.desktop.interface cursor-theme Sweet-cursors
 
 ### Keybindings
 
+Set up keybindings using the commands below:
+
 ```sh
+# Close window with Shift + Super + q
 gsettings set org.gnome.desktop.wm.keybindings close "['<Shift><Super>q']"
+# Initiate window move with Super + m
 gsettings set org.gnome.desktop.wm.keybindings begin-move "['<Super>m']"
+# Maximize window with Super + Up
 gsettings set org.gnome.desktop.wm.keybindings maximize "['<Super>Up']"
+# Launch terminal with Super + Return
 gsettings set org.gnome.settings-daemon.plugins.media-keys terminal "['<Super>Return']"
+# Disable Help keybinding
 gsettings set org.gnome.settings-daemon.plugins.media-keys help "[]"
+
+# Assign workspace switch shortcuts
 dconf write /org/gnome/desktop/wm/keybindings/move-to-workspace-1 "['<Super>F1']"
 dconf write /org/gnome/desktop/wm/keybindings/move-to-workspace-2 "['<Super>F2']"
 dconf write /org/gnome/desktop/wm/keybindings/move-to-workspace-3 "['<Super>F3']"
 dconf write /org/gnome/desktop/wm/keybindings/move-to-workspace-4 "['<Super>F4']"
+
+# Clear application switch shortcuts
 dconf write /org/gnome/shell/keybindings/switch-to-application-1 '@as []'
 dconf write /org/gnome/shell/keybindings/switch-to-application-2 '@as []'
 dconf write /org/gnome/shell/keybindings/switch-to-application-3 '@as []'
 dconf write /org/gnome/shell/keybindings/switch-to-application-4 '@as []'
+
+# Assign workspace switch shortcuts
 dconf write /org/gnome/desktop/wm/keybindings/switch-to-workspace-1 "['<Super>1']"
 dconf write /org/gnome/desktop/wm/keybindings/switch-to-workspace-2 "['<Super>2']"
 dconf write /org/gnome/desktop/wm/keybindings/switch-to-workspace-3 "['<Super>3']"
 dconf write /org/gnome/desktop/wm/keybindings/switch-to-workspace-4 "['<Super>4']"
-# manually add in settings/keyboard/custom shortcuts/ the following:
-# - name: 'open monitor'
-# - command: 'gnome-system-monitor'
-# - shortcut: Ctrl + Shift + Escape  
 ```
+
+For a custom shortcut that opens the system monitor, to mimic Windows 10 behavior, follow these steps in *Settings > Keyboard > Custom Shortcuts*:
+
+- Name: 'Open Monitor'
+- Command: 'gnome-system-monitor'
+- Shortcut: Ctrl + Shift + Escape
 
 ## Dev
 
