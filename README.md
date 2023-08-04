@@ -16,6 +16,7 @@ To ensure a smooth setup, I recommend starting with the tools from the [Utilitie
     - [Installers](#installers)
       - [apt](#apt)
       - [snap](#snap)
+      - [Flatpak](#flatpak)
       - [Gnome Software](#gnome-software)
       - [pip](#pip)
       - [pipx](#pipx)
@@ -62,7 +63,7 @@ To ensure a smooth setup, I recommend starting with the tools from the [Utilitie
 
 ### Installers
 
-#### apt
+#### [apt](https://wiki.debian.org/Apt)
 
 The package manager for [Debian](https://www.debian.org/)-based distro (so Ubuntu too).
 
@@ -78,6 +79,19 @@ The official app store provided by [Canonical](https://canonical.com/), where de
 ```sh
 # update
 sudo snap refresh
+```
+
+#### [Flatpak](https://flathub.org/)
+
+A large app store where some applications that aren't in [apt](https://wiki.debian.org/Apt) nor [snap](https://ubuntu.com/core/services/guide/snaps-intro) can be found.
+
+```sh
+sudo apt install flatpak
+# Install the Software Flatpak plugin to get flatpak in Gnome Software
+sudo apt install gnome-software-plugin-flatpak
+# Add the Flathub repository to get applications
+sudo flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+# restart your computer
 ```
 
 #### [Gnome Software](https://apps.gnome.org/app/org.gnome.Software/)
