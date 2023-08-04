@@ -366,6 +366,18 @@ gsettings set org.gnome.desktop.wm.keybindings begin-move "['<Super>m']"
 gsettings set org.gnome.desktop.wm.keybindings maximize "['<Super>Up']"
 gsettings set org.gnome.settings-daemon.plugins.media-keys terminal "['<Super>Return']"
 gsettings set org.gnome.settings-daemon.plugins.media-keys help "[]"
+dconf write /org/gnome/desktop/wm/keybindings/move-to-workspace-1 "['<Super>F1']"
+dconf write /org/gnome/desktop/wm/keybindings/move-to-workspace-2 "['<Super>F2']"
+dconf write /org/gnome/desktop/wm/keybindings/move-to-workspace-3 "['<Super>F3']"
+dconf write /org/gnome/desktop/wm/keybindings/move-to-workspace-4 "['<Super>F4']"
+dconf write /org/gnome/shell/keybindings/switch-to-application-1 '@as []'
+dconf write /org/gnome/shell/keybindings/switch-to-application-2 '@as []'
+dconf write /org/gnome/shell/keybindings/switch-to-application-3 '@as []'
+dconf write /org/gnome/shell/keybindings/switch-to-application-4 '@as []'
+dconf write /org/gnome/desktop/wm/keybindings/switch-to-workspace-1 "['<Super>1']"
+dconf write /org/gnome/desktop/wm/keybindings/switch-to-workspace-2 "['<Super>2']"
+dconf write /org/gnome/desktop/wm/keybindings/switch-to-workspace-3 "['<Super>3']"
+dconf write /org/gnome/desktop/wm/keybindings/switch-to-workspace-4 "['<Super>4']"
 # manually add in settings/keyboard/custom shortcuts/ the following:
 # - name: 'open monitor'
 # - command: 'gnome-system-monitor'
