@@ -1,15 +1,16 @@
 # Configuration for Ubuntu 23.04 Gnome minimal
 
-My personal configuration for [Ubuntu](https://ubuntu.com/) 23.04 minimal with [Gnome 4](https://www.gnome.org/) desktop.
-You can download the official ISO [here](https://ubuntu.com/download/desktop).
-This configuration was originaly for [Manjaro](https://manjaro.org/) 22.1.3 minimal with [Gnome 4](https://www.gnome.org/) desktop, but I left Manjaro for Ubuntu on 30 July 2023 because Manjaro was too unstable in my opinion.
-You can find a git tag ([v0.1](https://github.com/le-chartreux/linux-config/tree/v0.1)) at the last commit of the Manjaro support.
+This guide outlines my personalized configuration for a minimal installation of [Ubuntu 23.04](https://ubuntu.com/) featuring the [Gnome 4](https://www.gnome.org/) desktop environment.
+If you're interested in obtaining the official ISO file, you can access it [here](https://ubuntu.com/download/desktop).
+Originally, this configuration was tailored for [Manjaro 22.1.3](https://manjaro.org/) with the minimalist [Gnome 4](https://www.gnome.org/) desktop.
+However, due to stability concerns, I migrated from Manjaro to Ubuntu on July 30, 2023.
+For those curious about the initial setup for Manjaro, you can locate the git tag ([v0.1](https://github.com/le-chartreux/linux-config/tree/v0.1)) associated with the last Manjaro-supporting commit.
 
-The configuration consists of Shell commands, making it easy to install and customize without having to navigate through settings.
-Simply copy and paste the commands below.
-Please note that some part still needs to be done on graphical utilities.
+This configuration primarily involves executing Shell commands, simplifying the installation and customization processes by eliminating the need for intricate navigation within settings menus.
+You can effortlessly employ the commands provided below by copying and pasting them.
+It's worth mentioning that while most parts can be handled via these commands, certain aspects might still require adjustments through graphical utilities.
 
-To ensure a smooth setup, I recommend starting with the tools from the [Utilities](#utilities) and [Installers](#installers) sections as they may be required for other parts of the configuration.
+To ensure a seamless setup experience, I recommend commencing with the tools featured in the [Utilities](#utilities) and [Installers](#installers) sections, as these tools might prove indispensable for other facets of the configuration process.
 
 ## Table of contents
 
