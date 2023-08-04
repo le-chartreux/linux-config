@@ -28,6 +28,7 @@ To ensure a smooth setup, I recommend starting with the tools from the [Utilitie
     - [Vanilla desktop](#vanilla-desktop)
     - [Button layout](#button-layout)
     - [Extensions](#extensions)
+      - [User Themes](#user-themes)
       - [Blur my Shell](#blur-my-shell)
       - [Caffeine](#caffeine)
       - [Dash to Dock](#dash-to-dock)
@@ -177,6 +178,14 @@ gsettings set org.gnome.desktop.wm.preferences button-layout "'appmenu:minimize,
 flatpak run com.mattjakeman.ExtensionManager
 # tool to install from cli
 pipx install gnome-extensions-cli --system-site-packages 
+```
+
+#### [User Themes](https://extensions.gnome.org/extension/19/user-themes/)
+
+Allow to use shell themes.
+
+```sh
+gext install user-theme@gnome-shell-extensions.gcampax.github.com
 ```
 
 #### [Blur my Shell](https://github.com/aunetx/blur-my-shell)
