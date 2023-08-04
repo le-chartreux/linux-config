@@ -72,57 +72,60 @@ To ensure a seamless setup experience, I recommend commencing with the tools fea
 
 #### [apt](https://wiki.debian.org/Apt)
 
-The package manager for [Debian](https://www.debian.org/)-based distro (so Ubuntu too).
+A package manager utilized in [Debian](https://www.debian.org/) and its derivatives, including Ubuntu.
 
 ```sh
-# update system
+# Update the system
 sudo apt update && sudo apt upgrade && sudo apt autoremove
 ```
 
 #### [snap](https://ubuntu.com/core/services/guide/snaps-intro)
 
-The official app store provided by [Canonical](https://canonical.com/), where developers can deploy their applications.
+An official application store provided by [Canonical](https://canonical.com/), enabling developers to distribute their applications.
 
 ```sh
-# update
+# Update snap packages
 sudo snap refresh
 ```
 
 #### [Flatpak](https://flathub.org/)
 
-A large app store where some applications that aren't in [apt](https://wiki.debian.org/Apt) nor [snap](https://ubuntu.com/core/services/guide/snaps-intro) can be found.
+A comprehensive app repository, useful to obtain applications not found in [apt](https://wiki.debian.org/Apt) or [snap](https://ubuntu.com/core/services/guide/snaps-intro).
 
 ```sh
+# Install Flatpak
 sudo apt install flatpak
-# Install the Software Flatpak plugin to get flatpak in Gnome Software
+# Integrate Flatpak with Gnome Software
 sudo apt install gnome-software-plugin-flatpak
-# Add the Flathub repository to get applications
+# Add Flathub repository for applications
 sudo flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
-# restart your computer
+# Restart your computer after making these changes
 ```
 
 #### [Gnome Software](https://apps.gnome.org/app/org.gnome.Software/)
 
-The official Gnome installer, that looks better than the [Canonical's snap store](https://ubuntu.com/core/docs/store-overview) while providing exacly the same apps.
+The official Gnome installer, offering an aesthetic alternative to the [Canonical's snap store](https://ubuntu.com/core/docs/store-overview) while featuring the same applications.
 
 ```sh
+# Install Gnome Software
 sudo apt install gnome-software
 ```
 
 #### [pip](https://pypi.org/project/pip/)
 
-Package installer for [Python](https://www.python.org/). Many applications rely on it, install it to use them.
+A package installer essential for [Python](https://www.python.org/) applications. Many applications depend on it; installing it is crucial for their usage.
 
 ```sh
+# Install pip for Python
 sudo apt install python3-pip
 ```
 
 #### [pipx](https://pypa.github.io/pipx/)
 
-The recommended method for installing [Python](https://www.python.org/) applications from [pip](#pip). It provides the ability to install each application inside a separate isolated virtual environment, preventing any conflicts or interference with your system's [Python](https://www.python.org/) environment.
-This approach helps keep your system clean and organized while managing [Python](https://www.python.org/) applications.
+The recommended approach for installing [Python](https://www.python.org/) applications from [pip](#pip). This method ensures each application resides within an isolated virtual environment, preventing conflicts with the system's [Python](https://www.python.org/) environment.
 
 ```sh
+# Install pipx for managing Python applications
 sudo apt install pipx
 ```
 
