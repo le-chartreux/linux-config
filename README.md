@@ -31,8 +31,8 @@ To ensure a seamless setup experience, I recommend commencing with the tools fea
       - [Spellcheckers](#spellcheckers)
       - [Fonts](#fonts)
   - [Gnome 4](#gnome-4)
-    - [Vanilla desktop](#vanilla-desktop)
-    - [Button layout](#button-layout)
+    - [Vanilla Desktop](#vanilla-desktop)
+    - [Button Layout](#button-layout)
     - [Extensions](#extensions)
       - [User Themes](#user-themes)
       - [Blur my Shell](#blur-my-shell)
@@ -171,19 +171,19 @@ rm -r glacial-indifference.zip glacial-indifference
 
 ## [Gnome 4](https://www.gnome.org/)
 
-### Vanilla desktop
+### Vanilla Desktop
 
-To get the vanilla Gnome 4 desktop (without the Ubuntu-look) on top of which the riced desktop will be build, execute the following commands:
+To acquire the unaltered Gnome 4 desktop (void of the Ubuntu appearance), serving as the foundation for the customized desktop setup, implement the subsequent commands:
 
 ```sh
 sudo apt install gnome-session
 sudo apt install gnome-software
-# then reboot your computer and select 'Gnome' as a desktop at the logging page instead of 'Ubuntu'
+# Following this, restart your computer and opt for 'Gnome' as the desktop environment on the login screen, as opposed to 'Ubuntu'
 ```
 
-### Button layout
+### Button Layout
 
-Get the minimize and maximize buttons on the windows.
+Attain the minimize and maximize buttons within windows:
 
 ```sh
 gsettings set org.gnome.desktop.wm.preferences button-layout "'appmenu:minimize,maximize,close'"
@@ -192,15 +192,15 @@ gsettings set org.gnome.desktop.wm.preferences button-layout "'appmenu:minimize,
 ### Extensions
 
 ```sh
-# tool to manage extensions
+# Tool to manage extensions
 flatpak run com.mattjakeman.ExtensionManager
-# tool to install from cli
+# Tool to install from cli
 pipx install gnome-extensions-cli --system-site-packages 
 ```
 
 #### [User Themes](https://extensions.gnome.org/extension/19/user-themes/)
 
-Allow to use shell themes.
+Enable the use of shell themes:
 
 ```sh
 gext install user-theme@gnome-shell-extensions.gcampax.github.com
@@ -208,7 +208,7 @@ gext install user-theme@gnome-shell-extensions.gcampax.github.com
 
 #### [Blur my Shell](https://github.com/aunetx/blur-my-shell)
 
-Add a blur effect.
+Add a tasteful blur effect.
 
 ```sh
 gext install blur-my-shell@aunetx
@@ -218,7 +218,7 @@ dconf write /org/gnome/shell/extensions/blur-my-shell/overview/style-components 
 
 #### [Caffeine](https://github.com/eonpatapon/gnome-shell-extension-caffeine)
 
-Pause screen saving.
+Prevent screen saving during activities.
 
 ```sh
 gext install caffeine@patapon.info
@@ -226,7 +226,7 @@ gext install caffeine@patapon.info
 
 #### [Dash to Dock](https://micheleg.github.io/dash-to-dock/)
 
-Change the dock to a nicer one.
+Enhance the dock's appearance and behavior.
 
 ```sh
 gext install dash-to-dock@micxgx.gmail.com
@@ -252,7 +252,7 @@ dconf write /org/gnome/shell/extensions/dash-to-dock/max-alpha 1
 
 #### [Disable unredirect fullscreen windows](https://github.com/kazysmaster/gnome-shell-extension-disable-unredirect)
 
-Patch glitches on fullscreen (e.g. with the dock not hiding).
+Eliminate glitches during fullscreen operations (e.g., preventing the dock from staying visible).
 
 ```sh
 gext install unredirect@vaina.lt
@@ -260,8 +260,7 @@ gext install unredirect@vaina.lt
 
 #### [Freon](https://github.com/UshakovVasilii/gnome-shell-extension-freon)
 
-Display system temperatures (CPU, disk, video card), voltage and fan RPM.
-I use it to display the maximum temperature of the CPUs.
+Monitor system temperatures, voltage, and fan RPMs, particularly beneficial for tracking CPU temperatures.
 
 ```sh
 # freon relies on lm-sensors
@@ -280,7 +279,7 @@ dconf write /org/gnome/shell/extensions/freon/group-voltage false
 
 #### [Gnome 4x UI Improvements](https://github.com/axxapy/gnome-ui-tune)
 
-Improve the overview, mainly bigger workspaces thumbnails and search box hidden when unused.
+Enhance the overview with larger workspace thumbnails and a hidden search box.
 
 ```sh
 gext install gnome-ui-tune@itstime.tech
@@ -288,7 +287,7 @@ gext install gnome-ui-tune@itstime.tech
 
 #### [Just Perfection](https://gitlab.gnome.org/jrahmatzadeh/just-perfection)
 
-Hide some UI elements, change the behavior and customize the desktop.
+Customize the desktop by hiding UI elements and altering behavior.
 
 ```sh
 gext install just-perfection-desktop@just-perfection
@@ -305,7 +304,7 @@ dconf write /org/gnome/shell/extensions/just-perfection/notification-banner-posi
 
 #### [Panel corners](https://github.com/aunetx/panel-corners)
 
-Add round corners to the screen.
+Introduce rounded corners to the screen edges.
 
 ```sh
 gext install panel-corners@aunetx
@@ -315,7 +314,7 @@ dconf write /org/gnome/shell/extensions/panel-corners/panel-corners true
 
 #### [Resource Monitor](https://github.com/0ry0n/Resource_Monitor/)
 
-Show some useful information about the system (RAM & swap usage here).
+Display valuable system information, such as RAM and swap usage.
 
 ```sh
 gext install Resource_Monitor@Ory0n
@@ -336,7 +335,7 @@ dconf write /com/github/Ory0n/Resource_Monitor/thermalgputemperaturestatus false
 
 #### [Rounded Window Corners](https://github.com/yilozt/rounded-window-corners)
 
-Add rounded corners to apps.
+Implement rounded corners for application windows.
 
 ```sh
 gext install rounded-window-corners@yilozt
@@ -345,7 +344,7 @@ dconf write /org/gnome/shell/extensions/rounded-window-corners/global-rounded-co
 
 #### [RunCat](https://github.com/win0err/gnome-runcat)
 
-Indicator of CPU usage with a cat whose running speed depends on CPU load.
+Display CPU usage using a running cat whose speed corresponds to CPU load.
 
 ```sh
 gext install runcat@kolesnikov.se
@@ -354,7 +353,7 @@ dconf write /org/gnome/shell/extensions/runcat/idle-threshold 15
 
 #### [Transparent Window Moving](https://github.com/Noobsai/transparent-window-moving)
 
-Makes the window semi-transparent when moving or resizing.
+Enable window transparency during movement or resizing.
 
 ```sh
 gext install transparent-window-moving@noobsai.github.com
