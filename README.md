@@ -174,7 +174,7 @@ gsettings set org.gnome.desktop.wm.preferences button-layout "'appmenu:minimize,
 
 ```sh
 # tool to manage extensions
-flatpak install flathub org.gnome.Extensions
+flatpak run com.mattjakeman.ExtensionManager
 # tool to install from cli
 pipx install gnome-extensions-cli --system-site-packages 
 ```
