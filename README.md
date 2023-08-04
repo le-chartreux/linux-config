@@ -335,9 +335,9 @@ gext install transparent-window-moving@noobsai.github.com
 
 ```sh
 # tool to manage themes
-pipx install gnomelooks
-# tool to download gnome themes
 sudo apt install gnome-tweaks
+# tool to download gnome themes
+pipx install gnomelooks
 # Sweet-Dark-v40
 gnomelooks get https://www.gnome-look.org/p/1253385/
 gsettings set org.gnome.desktop.interface gtk-theme Sweet-Dark-v40
