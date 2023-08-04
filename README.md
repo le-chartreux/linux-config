@@ -131,8 +131,9 @@ sudo apt install pipx
 
 ### System
 
+For enhanced SSD performance, enable TRIM:
+
 ```sh
-# enabling TRIM (for better SSD performances)
 sudo systemctl enable fstrim.timer
 sudo systemctl start fstrim.timer
 ```
@@ -141,22 +142,27 @@ sudo systemctl start fstrim.timer
 
 #### Spellcheckers
 
+For English:
+
 ```sh
-# english
 sudo apt install aspell-en
 sudo apt install libmythes-1.2-0
 sudo apt install mythes-en-us 
 sudo snap install languagetool
-# french
+```
+
+For French:
+
+```sh
 sudo apt install aspell-fr mythes-fr
 ```
 
 #### Fonts
 
 ```sh
-# app to manage fonts
+# App to manage fonts
 sudo apt install font-manager
-# glacial indifference (a cool font)
+# Glacial indifference (a cool font)
 wget https://www.fontsquirrel.com/fonts/download/glacial-indifference --output-document=glacial-indifference.zip
 unzip glacial-indifference.zip -d glacial-indifference
 font-manager --install glacial-indifference/*.otf
