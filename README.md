@@ -236,6 +236,11 @@ gext install unredirect@vaina.lt
 Display system temperatures (CPU, disk, video card), voltage and fan RPM. I use it to display the maximum temperature of the CPUs.
 
 ```sh
+# freon relies on lm-sensors
+sudo apt install lm-sensors
+sudo sensors-detect  # hit enter and type 'yes' at the end to save to /etc/modules
+sudo /etc/init.d/kmod start
+# restart your computer
 gext install freon@UshakovVasilii_Github.yahoo.com 
 dconf write /org/gnome/shell/extensions/freon/hot-sensors "['__max__']"
 dconf write /org/gnome/shell/extensions/freon/show-rotationrate false
@@ -243,10 +248,6 @@ dconf write /org/gnome/shell/extensions/freon/show-voltage false
 dconf write /org/gnome/shell/extensions/freon/show-power false
 dconf write /org/gnome/shell/extensions/freon/group-rotationrate false
 dconf write /org/gnome/shell/extensions/freon/group-voltage false
-# freon relies on lm-sensors
-sudo apt install lm-sensors
-sudo sensors-detect  # hit enter and type 'yes' at the end to save to /etc/modules
-sudo /etc/init.d/kmod start
 ```
 
 #### [Gnome 4x UI Improvements](https://github.com/axxapy/gnome-ui-tune)
