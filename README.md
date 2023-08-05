@@ -383,6 +383,9 @@ dconf write /org/gnome/desktop/wm/preferences/theme "'Sweet-Dark-v40'"
 # Apply the Sweet-cursors theme
 gnomelooks get https://www.gnome-look.org/p/1393084/
 dconf write /org/gnome/desktop/interface/cursor-theme "'Sweet-cursors'"
+# Apply the ePapirus-Dark icon theme (purple folders)
+gnomelooks get https://www.gnome-look.org/p/1166289
+dconf write /org/gnome/desktop/interface/icon-theme "'ePapirus-Dark'"
 ```
 
 ### Keybindings
