@@ -21,6 +21,7 @@ To ensure a seamless setup experience, I recommend commencing with the tools fea
   - [Global](#global)
     - [Installers](#installers)
       - [apt](#apt)
+      - [Nala](#nala)
       - [snap](#snap)
       - [Flatpak](#flatpak)
       - [Gnome Software](#gnome-software)
@@ -80,6 +81,16 @@ A package manager utilized in [Debian](https://www.debian.org/) and its derivati
 sudo apt update && sudo apt upgrade && sudo apt autoremove
 ```
 
+#### [Nala](https://github.com/volitank/nala)
+
+Front-end for [apt](https://wiki.debian.org/Apt), to get a better interface and some cool features like parallel download, history and undo.
+
+```sh
+sudo apt install nala
+# get the fastest mirror
+sudo nala fetch
+```
+
 #### [snap](https://ubuntu.com/core/services/guide/snaps-intro)
 
 An official application store provided by [Canonical](https://canonical.com/), enabling developers to distribute their applications.
@@ -95,9 +106,9 @@ A comprehensive app repository, useful to obtain applications not found in [apt]
 
 ```sh
 # Install Flatpak
-sudo apt install flatpak
+sudo nala install flatpak
 # Integrate Flatpak with Gnome Software
-sudo apt install gnome-software-plugin-flatpak
+sudo nala install gnome-software-plugin-flatpak
 # Add Flathub repository for applications
 sudo flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 # Restart your computer after making these changes
@@ -109,7 +120,7 @@ The official Gnome installer, offering an aesthetic alternative to the [Canonica
 
 ```sh
 # Install Gnome Software
-sudo apt install gnome-software
+sudo nala install gnome-software
 ```
 
 #### [pip](https://pypi.org/project/pip/)
@@ -118,7 +129,7 @@ A package installer essential for [Python](https://www.python.org/) applications
 
 ```sh
 # Install pip for Python
-sudo apt install python3-pip
+sudo nala install python3-pip
 ```
 
 #### [pipx](https://pypa.github.io/pipx/)
@@ -127,7 +138,7 @@ The recommended approach for installing [Python](https://www.python.org/) applic
 
 ```sh
 # Install pipx for managing Python applications
-sudo apt install pipx
+sudo nala install pipx
 ```
 
 ### System
@@ -146,23 +157,23 @@ sudo systemctl start fstrim.timer
 For English:
 
 ```sh
-sudo apt install aspell-en
-sudo apt install libmythes-1.2-0
-sudo apt install mythes-en-us 
+sudo nala install aspell-en
+sudo nala install libmythes-1.2-0
+sudo nala install mythes-en-us 
 sudo snap install languagetool
 ```
 
 For French:
 
 ```sh
-sudo apt install aspell-fr mythes-fr
+sudo nala install aspell-fr mythes-fr
 ```
 
 #### Fonts
 
 ```sh
 # App to manage fonts
-sudo apt install font-manager
+sudo nala install font-manager
 # Glacial indifference (a cool font)
 wget https://www.fontsquirrel.com/fonts/download/glacial-indifference --output-document=glacial-indifference.zip
 unzip glacial-indifference.zip -d glacial-indifference
@@ -177,8 +188,8 @@ rm -r glacial-indifference.zip glacial-indifference
 To acquire the unaltered Gnome 4 desktop (void of the Ubuntu appearance), serving as the foundation for the customized desktop setup, implement the subsequent commands:
 
 ```sh
-sudo apt install gnome-session
-sudo apt install gnome-software
+sudo nala install gnome-session
+sudo nala install gnome-software
 # Following this, restart your computer and opt for 'Gnome' as the desktop environment on the login screen, as opposed to 'Ubuntu'
 ```
 
@@ -274,7 +285,7 @@ Monitor system temperatures, voltage, and fan RPMs, particularly beneficial for 
 
 ```sh
 # freon relies on lm-sensors
-sudo apt install lm-sensors
+sudo nala install lm-sensors
 sudo sensors-detect  # hit enter and type 'yes' at the end to save to /etc/modules
 sudo /etc/init.d/kmod start
 # restart your computer
@@ -373,7 +384,7 @@ gext install transparent-window-moving@noobsai.github.com
 
 ```sh
 # Install Gnome Tweaks for theme management
-sudo apt install gnome-tweaks
+sudo nala install gnome-tweaks
 # Install gnomelooks for downloading Gnome themes
 pipx install gnomelooks
 # Apply the Sweet-Dark-v40 GTK theme
@@ -504,7 +515,7 @@ betterdiscordctl -i snap install
 GIMP is ugly and hard to learn, but it's a powerful graphics editing software:
 
 ```sh
-sudo apt install gimp
+sudo nala install gimp
 ```
 
 ### Utilities
@@ -513,9 +524,9 @@ Install various utility tools:
 
 ```sh
 # Install curl to fetch content from the web
-# If needed, you may have to downgrade libcurl before: sudo apt install libcurl4=7.88.1-8ubuntu2
-sudo apt install curl
+# If needed, you may have to downgrade libcurl before: sudo nala install libcurl4=7.88.1-8ubuntu2
+sudo nala install curl
 
 # Install wl-clipboard to copy text and images to clipboard from the command line
-sudo apt install wl-clipboard
+sudo nala install wl-clipboard
 ```
