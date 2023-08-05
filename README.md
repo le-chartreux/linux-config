@@ -187,7 +187,7 @@ sudo apt install gnome-software
 Attain the minimize and maximize buttons within windows:
 
 ```sh
-gsettings set org.gnome.desktop.wm.preferences button-layout "'appmenu:minimize,maximize,close'"
+dconf write /org/gnome/desktop/wm/preferences/button-layout "'appmenu:minimize,maximize,close'"
 ```
 
 ### Workspaces
@@ -378,12 +378,11 @@ sudo apt install gnome-tweaks
 pipx install gnomelooks
 # Apply the Sweet-Dark-v40 GTK theme
 gnomelooks get https://www.gnome-look.org/p/1253385/
-gsettings set org.gnome.desktop.interface gtk-theme Sweet-Dark-v40
-gsettings set org.gnome.desktop.wm.preferences theme Sweet-Dark-v40
-dconf write /org/gnome/shell/extensions/user-theme/name "'Sweet-Dark-v40'"
+dconf write /org/gnome/desktop/interface/gtk-theme "'Sweet-Dark-v40'"
+dconf write /org/gnome/desktop/wm/preferences/theme "'Sweet-Dark-v40'"
 # Apply the Sweet-cursors theme
 gnomelooks get https://www.gnome-look.org/p/1393084/
-gsettings set org.gnome.desktop.interface cursor-theme Sweet-cursors
+dconf write /org/gnome/desktop/interface/cursor-theme "'Sweet-cursors'"
 ```
 
 ### Keybindings
@@ -392,15 +391,15 @@ Set up keybindings using the commands below:
 
 ```sh
 # Close window with Shift + Super + q
-gsettings set org.gnome.desktop.wm.keybindings close "['<Shift><Super>q']"
+dconf write /org/gnome/desktop/wm/keybindings/close "['<Shift><Super>q']"
 # Initiate window move with Super + m
-gsettings set org.gnome.desktop.wm.keybindings begin-move "['<Super>m']"
+dconf write /org/gnome/desktop/wm/keybindings/begin-move "['<Super>m']"
 # Maximize window with Super + Up
-gsettings set org.gnome.desktop.wm.keybindings maximize "['<Super>Up']"
+dconf write /org/gnome/desktop/wm/keybindings/maximize "['<Super>Up']"
 # Launch terminal with Super + Return
-gsettings set org.gnome.settings-daemon.plugins.media-keys terminal "['<Super>Return']"
+dconf write /org/gnome/settings-daemon/plugins/media-keys/terminal "['<Super>Return']"
 # Disable Help keybinding
-gsettings set org.gnome.settings-daemon.plugins.media-keys help "[]"
+dconf write /org/gnome/settings-daemon/plugins/media-keys/help "'[]'"
 
 # Assign workspace switch shortcuts
 dconf write /org/gnome/desktop/wm/keybindings/move-to-workspace-1 "['<Super>F1']"
