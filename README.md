@@ -33,6 +33,7 @@ To ensure a seamless setup experience, I recommend commencing with the tools fea
   - [Gnome 4](#gnome-4)
     - [Vanilla Desktop](#vanilla-desktop)
     - [Button Layout](#button-layout)
+    - [Workspaces](#workspaces)
     - [Extensions](#extensions)
       - [User Themes](#user-themes)
       - [Blur my Shell](#blur-my-shell)
@@ -187,6 +188,15 @@ Attain the minimize and maximize buttons within windows:
 
 ```sh
 gsettings set org.gnome.desktop.wm.preferences button-layout "'appmenu:minimize,maximize,close'"
+```
+
+### Workspaces
+
+Use 4 workspaces by default:
+
+```sh
+dconf write /org/gnome/desktop/wm/preferences/num-workspaces 4
+dconf write /org/gnome/mutter/dynamic-workspaces false
 ```
 
 ### Extensions
