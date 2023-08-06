@@ -54,6 +54,7 @@ To ensure a seamless setup experience, I recommend commencing with the tools fea
       - [Shell](#shell)
       - [Cursors](#cursors)
       - [Icons](#icons)
+      - [Grub](#grub)
     - [Keybindings](#keybindings)
   - [Dev](#dev)
     - [Git](#git)
@@ -422,6 +423,16 @@ Install the ePapirus-Dark icon theme (purple folders).
 gnomelooks get https://www.gnome-look.org/p/1166289
 dconf write /org/gnome/desktop/interface/icon-theme "'ePapirus-Dark'"
 ```
+
+#### Grub
+
+Install Vimix theme with colors.
+See [the github page](https://github.com/vinceliuice/grub2-themes) for futher information about the configuration (e.g. screen resolution).
+
+```sh
+git clone https://github.com/vinceliuice/grub2-themes.git
+cd grub2-themes/
+sudo ./install.sh --theme vimix --icon color --screen 1080p
 ```
 
 ### Keybindings
