@@ -50,6 +50,10 @@ To ensure a seamless setup experience, I recommend commencing with the tools fea
       - [RunCat](#runcat)
       - [Transparent Window Moving](#transparent-window-moving)
     - [Theme](#theme)
+      - [Utils](#utils)
+      - [Shell](#shell)
+      - [Cursors](#cursors)
+      - [Icons](#icons)
     - [Keybindings](#keybindings)
   - [Dev](#dev)
     - [Git](#git)
@@ -382,21 +386,42 @@ gext install transparent-window-moving@noobsai.github.com
 
 ### Theme
 
+#### Utils
+
 ```sh
 # Install Gnome Tweaks for theme management
 sudo nala install gnome-tweaks
 # Install gnomelooks for downloading Gnome themes
 pipx install gnomelooks
-# Apply the Sweet-Dark-v40 GTK theme
+```
+
+#### Shell
+
+Install the Sweet-Dark-v40 GTK theme.
+
+```sh
 gnomelooks get https://www.gnome-look.org/p/1253385/
 dconf write /org/gnome/desktop/interface/gtk-theme "'Sweet-Dark-v40'"
 dconf write /org/gnome/desktop/wm/preferences/theme "'Sweet-Dark-v40'"
-# Apply the Sweet-cursors theme
+```
+
+#### Cursors
+
+Install the Sweet-cursors theme.
+
+```sh
 gnomelooks get https://www.gnome-look.org/p/1393084/
 dconf write /org/gnome/desktop/interface/cursor-theme "'Sweet-cursors'"
-# Apply the ePapirus-Dark icon theme (purple folders)
+```
+
+#### Icons
+
+Install the ePapirus-Dark icon theme (purple folders).
+
+```sh
 gnomelooks get https://www.gnome-look.org/p/1166289
 dconf write /org/gnome/desktop/interface/icon-theme "'ePapirus-Dark'"
+```
 ```
 
 ### Keybindings
