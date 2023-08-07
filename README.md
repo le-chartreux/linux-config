@@ -534,6 +534,15 @@ sudo snap install pycharm-professional --classic
 
 Shell with a lot of cool features and customization.
 
+```sh
+sudo nala install zsh
+# do your configuration
+zsh
+# set zsh as the default shell
+chsh -s /bin/zsh `whoami`
+# logout
+```
+
 #### [Oh My Zsh](https://ohmyz.sh/)
 
 Framework to manage [Zsh](https://wiki.archlinux.org/title/Zsh) configuration.
@@ -552,8 +561,8 @@ Install Discord using Snap:
 sudo snap install discord
 # Install BetterDiscord
 sudo add-apt-repository ppa:chronobserver/betterdiscordctl
-sudo apt update
-sudo apt install betterdiscordctl
+sudo nala update
+sudo nala install betterdiscordctl
 betterdiscordctl -i snap install
 ```
 
