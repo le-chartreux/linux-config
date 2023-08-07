@@ -53,6 +53,7 @@ To ensure a seamless setup experience, I recommend commencing with the tools fea
       - [Utils](#utils)
       - [Shell](#shell)
       - [Cursors](#cursors)
+      - [Libadwaita](#libadwaita)
       - [Icons](#icons)
       - [Grub](#grub)
     - [Keybindings](#keybindings)
@@ -413,6 +414,18 @@ Install the Sweet-cursors theme.
 ```sh
 gnomelooks get https://www.gnome-look.org/p/1393084/
 dconf write /org/gnome/desktop/interface/cursor-theme "'Sweet-cursors'"
+```
+
+#### Libadwaita
+
+To theme Libadwaita applications, we need to use [Gradiance](https://flathub.org/apps/com.github.GradienceTeam.Gradience).
+
+```sh
+sudo flatpak install flathub com.github.GradienceTeam.Gradience
+flatpak run com.github.GradienceTeam.Gradience
+flatpak run --command=gradience-cli com.github.GradienceTeam.Gradience download --preset-name "Pretty Purple"
+flatpak run --command=gradience-cli com.github.GradienceTeam.Gradience apply -n "Pretty Purple"
+# then logout 
 ```
 
 #### Icons
