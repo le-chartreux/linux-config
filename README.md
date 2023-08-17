@@ -554,6 +554,13 @@ chsh -s /bin/zsh `whoami`
 
 Framework to manage [Zsh](https://wiki.archlinux.org/title/Zsh) configuration.
 
+```sh
+# install
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+# in .zshrc, replace the 'plugin' line by this one
+plugins=(colored-man-pages cp)
+```
+
 ### [exa](https://the.exa.website/)
 
 Remplacement for `ls`, way more fancy.
