@@ -553,7 +553,7 @@ sudo snap install pycharm-professional --classic
 
 ### Gnome terminal
 
-In the `Text` configuration, set the font to `CaskaydiaCove Nerd Font Mono`.
+In the `Text` configuration, set the font to `CaskaydiaCove Nerd Font Mono` and the initial terminal size to 90 columns.
 In the `Colors` configuration, select `Show bold text in bright colors` to increase visibility.
 
 ### [Zsh](https://wiki.archlinux.org/title/Zsh)
