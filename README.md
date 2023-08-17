@@ -64,6 +64,7 @@ To ensure a seamless setup experience, I recommend commencing with the tools fea
       - [Visual Studio Code](#visual-studio-code)
       - [PyCharm Professional](#pycharm-professional)
   - [CLI](#cli)
+    - [Gnome terminal](#gnome-terminal)
     - [Zsh](#zsh)
       - [Oh My Zsh](#oh-my-zsh)
       - [zsh autosuggestions](#zsh-autosuggestions)
@@ -538,6 +539,11 @@ sudo snap install pycharm-professional --classic
 ```
 
 ## CLI
+
+### Gnome terminal
+
+In the `Text` configuration, set the font to `CaskaydiaCove Nerd Font Mono`.
+In the `Colors` configuration, select `Show bold text in bright colors` to increase visibility.
 
 ### [Zsh](https://wiki.archlinux.org/title/Zsh)
 
