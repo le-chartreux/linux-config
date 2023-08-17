@@ -63,6 +63,7 @@ To ensure a seamless setup experience, I recommend commencing with the tools fea
     - [Applications](#applications)
       - [Visual Studio Code](#visual-studio-code)
       - [PyCharm Professional](#pycharm-professional)
+  - [CLI](#cli)
     - [Zsh](#zsh)
       - [Oh My Zsh](#oh-my-zsh)
     - [exa](#exa)
