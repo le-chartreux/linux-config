@@ -65,6 +65,7 @@ To ensure a seamless setup experience, I recommend commencing with the tools fea
       - [PyCharm Professional](#pycharm-professional)
     - [Zsh](#zsh)
       - [Oh My Zsh](#oh-my-zsh)
+    - [exa](#exa)
   - [Miscellaneous Applications](#miscellaneous-applications)
     - [Social](#social)
       - [Discord](#discord)
@@ -549,7 +550,13 @@ chsh -s /bin/zsh `whoami`
 
 Framework to manage [Zsh](https://wiki.archlinux.org/title/Zsh) configuration.
 
-TODO
+### [exa](https://the.exa.website/)
+
+Remplacement for `ls`, way more fancy.
+
+```sh
+sudo nala install exa
+```
 
 ## Miscellaneous Applications
 
