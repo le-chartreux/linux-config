@@ -66,6 +66,7 @@ To ensure a seamless setup experience, I recommend commencing with the tools fea
   - [CLI](#cli)
     - [Zsh](#zsh)
       - [Oh My Zsh](#oh-my-zsh)
+      - [zsh autosuggestions](#zsh-autosuggestions)
     - [exa](#exa)
     - [bat](#bat)
   - [Miscellaneous Applications](#miscellaneous-applications)
@@ -559,6 +560,15 @@ Framework to manage [Zsh](https://wiki.archlinux.org/title/Zsh) configuration.
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 # in .zshrc, replace the 'plugin' line by this one
 plugins=(colored-man-pages cp)
+```
+
+#### [zsh autosuggestions](https://github.com/zsh-users/zsh-autosuggestions/)
+
+Fish-like autosuggestions for zsh.
+
+```sh
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+# add zsh-autosuggestions to your plugin list in .zshrc
 ```
 
 ### [exa](https://the.exa.website/)
