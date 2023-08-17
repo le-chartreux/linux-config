@@ -191,6 +191,16 @@ wget https://www.fontsquirrel.com/fonts/download/glacial-indifference --output-d
 unzip glacial-indifference.zip -d glacial-indifference
 font-manager --install glacial-indifference/*.otf
 rm -r glacial-indifference.zip glacial-indifference
+# CascadiaCode Nerd
+wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.2/CascadiaCode.zip
+unzip CascadiaCode.zip -d CascadiaCode
+font-manager --install CascadiaCode/*.ttf
+rm -r CascadiaCode*
+# JetBrainsMono Nerd
+wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.2/JetBrainsMono.zip
+unzip JetBrainsMono.zip -d JetBrainsMono
+font-manager --install JetBrainsMono/*.ttf
+rm -r JetBrainsMono*
 ```
 
 ## [Gnome 4](https://www.gnome.org/)
