@@ -430,6 +430,8 @@ Install the Sweet-cursors theme.
 
 ```sh
 gnomelooks get https://www.gnome-look.org/p/1393084/
+# need to move it else the cursor theme will not apply everywhere 
+mv ~/.local/share/icons/Sweet-cursors ~/.icons/
 dconf write /org/gnome/desktop/interface/cursor-theme "'Sweet-cursors'"
 ```
 
