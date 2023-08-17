@@ -66,6 +66,7 @@ To ensure a seamless setup experience, I recommend commencing with the tools fea
     - [Zsh](#zsh)
       - [Oh My Zsh](#oh-my-zsh)
     - [exa](#exa)
+    - [bat](#bat)
   - [Miscellaneous Applications](#miscellaneous-applications)
     - [Social](#social)
       - [Discord](#discord)
@@ -556,6 +557,14 @@ Remplacement for `ls`, way more fancy.
 
 ```sh
 sudo nala install exa
+```
+
+### [bat](https://github.com/sharkdp/bat)
+
+Remplacement for `cat`, with syntax hightlighting.
+
+```sh
+sudo nala install bat
 ```
 
 ## Miscellaneous Applications
