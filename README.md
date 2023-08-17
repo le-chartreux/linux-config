@@ -446,6 +446,8 @@ See [the github page](https://github.com/vinceliuice/grub2-themes) for futher in
 git clone https://github.com/vinceliuice/grub2-themes.git
 cd grub2-themes/
 sudo ./install.sh --theme vimix --icon color --screen 1080p
+cd ..
+rm -rf grub2-themes
 ```
 
 ### Keybindings
