@@ -535,6 +535,8 @@ My preferred Python IDE:
 sudo snap install pycharm-professional --classic
 ```
 
+## CLI
+
 ### [Zsh](https://wiki.archlinux.org/title/Zsh)
 
 Shell with a lot of cool features and customization.
