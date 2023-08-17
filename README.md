@@ -69,6 +69,7 @@ To ensure a seamless setup experience, I recommend commencing with the tools fea
       - [Oh My Zsh](#oh-my-zsh)
       - [zsh autosuggestions](#zsh-autosuggestions)
       - [zsh syntax highlighting](#zsh-syntax-highlighting)
+      - [Spaceship Prompt](#spaceship-prompt)
     - [exa](#exa)
     - [bat](#bat)
   - [Miscellaneous Applications](#miscellaneous-applications)
@@ -595,6 +596,16 @@ Fish shell like syntax highlighting for Zsh.
 ```sh
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 # add zsh-syntax-highlighting at the end of your plugin list in .zshrc
+```
+
+#### [Spaceship Prompt](https://github.com/spaceship-prompt/spaceship-prompt)
+
+Minimalistic, powerful and extremely customizable Zsh prompt.
+
+```sh
+git clone https://github.com/spaceship-prompt/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt" --depth=1
+ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
+# Set ZSH_THEME="spaceship" in your .zshrc.
 ```
 
 ### [exa](https://the.exa.website/)
