@@ -67,6 +67,7 @@ To ensure a seamless setup experience, I recommend commencing with the tools fea
     - [Zsh](#zsh)
       - [Oh My Zsh](#oh-my-zsh)
       - [zsh autosuggestions](#zsh-autosuggestions)
+      - [zsh syntax highlighting](#zsh-syntax-highlighting)
     - [exa](#exa)
     - [bat](#bat)
   - [Miscellaneous Applications](#miscellaneous-applications)
@@ -569,6 +570,15 @@ Fish-like autosuggestions for zsh.
 ```sh
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 # add zsh-autosuggestions to your plugin list in .zshrc
+```
+
+#### [zsh syntax highlighting](https://github.com/zsh-users/zsh-syntax-highlighting/)
+
+Fish shell like syntax highlighting for Zsh.
+
+```sh
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+# add zsh-syntax-highlighting at the end of your plugin list in .zshrc
 ```
 
 ### [exa](https://the.exa.website/)
