@@ -62,6 +62,7 @@ These tools might be essential for other parts of the configuration process.
       - [Icons](#icons)
       - [Grub](#grub)
     - [Keybindings](#keybindings)
+    - [Disable PageUp and PageDown](#disable-pageup-and-pagedown)
   - [Dev](#dev)
     - [Git](#git)
     - [GitHub](#github)
@@ -521,6 +522,18 @@ For a custom shortcut that opens the system monitor, to mimic Windows 10 behavio
 - Name: 'Open Monitor'
 - Command: 'gnome-system-monitor'
 - Shortcut: Ctrl + Shift + Escape
+
+### Disable PageUp and PageDown
+
+I rarely find myself using the PageUp and PageDown keys, and I frequently press them unintentionally.
+Therefore, I find it more convenient to disable them.
+However, it's worth noting that this approach might not be effective in certain applications like VSCode.
+To check which keycode is linked to PageUp and PageDown, use the `xev` command.
+
+```sh
+xmodmap -e 'keycode 112 = '
+xmodmap -e 'keycode 117 = '
+```
 
 ## Dev
 
