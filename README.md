@@ -34,6 +34,7 @@ To ensure a seamless setup experience, I recommend commencing with the tools fea
   - [Gnome 4](#gnome-4)
     - [Vanilla Desktop](#vanilla-desktop)
     - [Button Layout](#button-layout)
+    - [Tap to click](#tap-to-click)
     - [Workspaces](#workspaces)
     - [Extensions](#extensions)
       - [User Themes](#user-themes)
@@ -222,6 +223,14 @@ Attain the minimize and maximize buttons within windows:
 
 ```sh
 dconf write /org/gnome/desktop/wm/preferences/button-layout "'appmenu:minimize,maximize,close'"
+```
+
+### Tap to click
+
+Enable the tap-to-click functionality on your touchpad, making tapping the touchpad equivalent to clicking.
+
+```sh
+gsettings set org.gnome.desktop.peripherals.touchpad tap-to-click true
 ```
 
 ### Workspaces
