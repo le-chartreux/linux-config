@@ -40,6 +40,7 @@ These tools might be essential for other parts of the configuration process.
     - [Tap to click](#tap-to-click)
     - [Workspaces](#workspaces)
     - [Extensions](#extensions)
+      - [Managers](#managers)
       - [User Themes](#user-themes)
       - [Blur my Shell](#blur-my-shell)
       - [Caffeine](#caffeine)
@@ -91,7 +92,7 @@ These tools might be essential for other parts of the configuration process.
 
 #### [apt](https://wiki.debian.org/Apt)
 
-A package manager utilized in [Debian](https://www.debian.org/) and its derivatives, including Ubuntu.
+A package manager used in [Debian](https://www.debian.org/) and its derivatives, including Ubuntu.
 
 ```sh
 # Update the system
@@ -100,17 +101,17 @@ sudo apt update && sudo apt upgrade && sudo apt autoremove
 
 #### [Nala](https://github.com/volitank/nala)
 
-Front-end for [apt](https://wiki.debian.org/Apt), to get a better interface and some cool features like parallel download, history and undo.
+A user-friendly front-end for [apt](https://wiki.debian.org/Apt), offering an improved interface and features like parallel downloads, history and undo.
 
 ```sh
 sudo apt install nala
-# get the fastest mirror
+# Get the fastest mirror
 sudo nala fetch
 ```
 
 #### [snap](https://ubuntu.com/core/services/guide/snaps-intro)
 
-An official application store provided by [Canonical](https://canonical.com/), enabling developers to distribute their applications.
+An official application store by [Canonical](https://canonical.com/), allowing developers to distribute their applications.
 
 ```sh
 # Update snap packages
@@ -142,7 +143,7 @@ sudo nala install gnome-software
 
 #### [pip](https://pypi.org/project/pip/)
 
-A package installer essential for [Python](https://www.python.org/) applications. Many applications depend on it; installing it is crucial for their usage.
+A package manager for [Python](https://www.python.org/) applications. Many applications rely on it, making its installation vital.
 
 ```sh
 # Install pip for Python
@@ -151,7 +152,8 @@ sudo nala install python3-pip
 
 #### [pipx](https://pypa.github.io/pipx/)
 
-The recommended approach for installing [Python](https://www.python.org/) applications from [pip](#pip). This method ensures each application resides within an isolated virtual environment, preventing conflicts with the system's [Python](https://www.python.org/) environment.
+The recommended approach for installing [Python](https://www.python.org/) applications via [pip](#pip).
+This method ensures that each application resides within an isolated virtual environment, preventing conflicts with the system's [Python](https://www.python.org/) environment.
 
 ```sh
 # Install pipx for managing Python applications
@@ -160,7 +162,7 @@ sudo nala install pipx
 
 ### System
 
-For enhanced SSD performance, enable TRIM:
+Enabling TRIM enhance SSD performance.
 
 ```sh
 sudo systemctl enable fstrim.timer
@@ -171,36 +173,34 @@ sudo systemctl start fstrim.timer
 
 #### Spellcheckers
 
-For English:
-
 ```sh
+# For English
 sudo nala install aspell-en
 sudo nala install libmythes-1.2-0
 sudo nala install mythes-en-us 
 sudo snap install languagetool
-```
-
-For French:
-
-```sh
+# For French
 sudo nala install aspell-fr mythes-fr
 ```
 
 #### Fonts
 
 ```sh
-# App to manage fonts
+# Font management tool
 sudo nala install font-manager
+
 # Glacial indifference (a cool font)
 wget https://www.fontsquirrel.com/fonts/download/glacial-indifference --output-document=glacial-indifference.zip
 unzip glacial-indifference.zip -d glacial-indifference
 font-manager --install glacial-indifference/*.otf
 rm -r glacial-indifference.zip glacial-indifference
+
 # CascadiaCode Nerd
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.2/CascadiaCode.zip
 unzip CascadiaCode.zip -d CascadiaCode
 font-manager --install CascadiaCode/*.ttf
 rm -r CascadiaCode*
+
 # JetBrainsMono Nerd
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.2/JetBrainsMono.zip
 unzip JetBrainsMono.zip -d JetBrainsMono
@@ -212,7 +212,7 @@ rm -r JetBrainsMono*
 
 ### Vanilla Desktop
 
-To acquire the unaltered Gnome 4 desktop (void of the Ubuntu appearance), serving as the foundation for the customized desktop setup, implement the subsequent commands:
+Acquire the unaltered Gnome 4 desktop (without the Ubuntu appearance) as the foundation for the customized desktop setup.
 
 ```sh
 sudo nala install gnome-session
@@ -222,7 +222,7 @@ sudo nala install gnome-software
 
 ### Button Layout
 
-Attain the minimize and maximize buttons within windows:
+Add minimize and maximize buttons to windows.
 
 ```sh
 dconf write /org/gnome/desktop/wm/preferences/button-layout "'appmenu:minimize,maximize,close'"
@@ -238,7 +238,7 @@ gsettings set org.gnome.desktop.peripherals.touchpad tap-to-click true
 
 ### Workspaces
 
-Use 4 workspaces by default:
+Use 4 workspaces by default.
 
 ```sh
 dconf write /org/gnome/desktop/wm/preferences/num-workspaces 4
@@ -246,6 +246,8 @@ dconf write /org/gnome/mutter/dynamic-workspaces false
 ```
 
 ### Extensions
+
+#### Managers
 
 ```sh
 # Tool to manage extensions
@@ -256,7 +258,7 @@ pipx install gnome-extensions-cli --system-site-packages
 
 #### [User Themes](https://extensions.gnome.org/extension/19/user-themes/)
 
-Enable the use of shell themes:
+Enable the use of custom shell themes.
 
 ```sh
 gext install user-theme@gnome-shell-extensions.gcampax.github.com
@@ -264,7 +266,7 @@ gext install user-theme@gnome-shell-extensions.gcampax.github.com
 
 #### [Blur my Shell](https://github.com/aunetx/blur-my-shell)
 
-Add a tasteful blur effect.
+Add an elegant blur effect.
 
 ```sh
 gext install blur-my-shell@aunetx
@@ -308,7 +310,7 @@ dconf write /org/gnome/shell/extensions/dash-to-dock/max-alpha 1
 
 #### [Disable unredirect fullscreen windows](https://github.com/kazysmaster/gnome-shell-extension-disable-unredirect)
 
-Eliminate glitches during fullscreen operations (e.g., preventing the dock from staying visible).
+Prevent glitches during fullscreen operations, such as avoiding the dock from remaining visible.
 
 ```sh
 gext install unredirect@vaina.lt
@@ -483,8 +485,6 @@ rm -rf grub2-themes
 
 ### Keybindings
 
-Set up keybindings using the commands below:
-
 ```sh
 # Close window with Shift + Super + q
 dconf write /org/gnome/desktop/wm/keybindings/close "['<Shift><Super>q']"
@@ -526,7 +526,7 @@ For a custom shortcut that opens the system monitor, to mimic Windows 10 behavio
 
 ### [Git](https://git-scm.com/)
 
-Configure your global Git settings:
+Configure your global Git settings.
 
 ```sh
 git config --global user.name "Your Name"
@@ -536,14 +536,12 @@ git config --global core.editor nano
 
 ### [GitHub](https://github.com/)
 
-Generate an SSH key and add it to your GitHub account:
+Generate an SSH key and add it to your GitHub account by pasting the copied key [here](https://github.com/settings/ssh/new).
 
 ```sh
 ssh-keygen -t ed25519 -C "your-gh-email@something"
 wl-copy < ~/.ssh/id_*.pub
 ```
-
-Then paste the copied key [here](https://github.com/settings/ssh/new).
 
 ### Applications
 
@@ -557,7 +555,7 @@ sudo snap install code --classic
 
 #### [PyCharm Professional](https://www.jetbrains.com/pycharm/)
 
-My preferred Python IDE:
+My preferred Python IDE.
 
 ```sh
 sudo snap install pycharm-professional --classic
@@ -644,8 +642,6 @@ sudo nala install bat
 
 #### [Discord](https://discord.com/)
 
-Install Discord using Snap:
-
 ```sh
 sudo snap install discord
 # Install BetterDiscord
@@ -659,15 +655,13 @@ betterdiscordctl -i snap install
 
 #### [Gimp](https://www.gimp.org/)
 
-GIMP is ugly and hard to learn, but it's a powerful graphics editing software:
+GIMP is ugly and hard to learn, but it's a powerful graphics editing software.
 
 ```sh
 sudo nala install gimp
 ```
 
 ### Utilities
-
-Install various utility tools:
 
 ```sh
 # Install curl to fetch content from the web
