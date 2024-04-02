@@ -69,6 +69,8 @@ These tools might be essential for other parts of the configuration process.
     - [Applications](#applications)
       - [Visual Studio Code](#visual-studio-code)
       - [PyCharm Professional](#pycharm-professional)
+    - [Python](#python)
+      - [bpython](#bpython) 
   - [CLI](#cli)
     - [Gnome terminal](#gnome-terminal)
     - [Zsh](#zsh)
@@ -572,6 +574,16 @@ My preferred Python IDE.
 
 ```sh
 sudo snap install pycharm-professional --classic
+```
+
+### Python
+
+#### [bpython](https://bpython-interpreter.org/)
+
+An interactive Python shell with many modern features (e.g. autocomplete, colors, nice tabulations).
+
+```sh
+pipx install bpython
 ```
 
 ## CLI
