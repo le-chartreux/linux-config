@@ -51,7 +51,6 @@ These tools might be essential for other parts of the configuration process.
       - [Just Perfection](#just-perfection)
       - [Panel corners](#panel-corners)
       - [Resource Monitor](#resource-monitor)
-      - [Rounded Window Corners](#rounded-window-corners)
       - [RunCat](#runcat)
       - [Transparent Window Moving](#transparent-window-moving)
     - [Theme](#theme)
@@ -392,15 +391,6 @@ dconf write /com/github/Ory0n/Resource_Monitor/swapstatus true
 dconf write /com/github/Ory0n/Resource_Monitor/swapunit "'perc'"
 dconf write /com/github/Ory0n/Resource_Monitor/thermalcputemperaturestatus false
 dconf write /com/github/Ory0n/Resource_Monitor/thermalgputemperaturestatus false
-```
-
-#### [Rounded Window Corners](https://github.com/yilozt/rounded-window-corners)
-
-Implement rounded corners for application windows.
-
-```sh
-gext install rounded-window-corners@yilozt
-dconf write /org/gnome/shell/extensions/rounded-window-corners/global-rounded-corner-settings "{'padding': <{'left': <uint32 1>, 'right': <uint32 1>, 'top': <uint32 1>, 'bottom': <uint32 1>}>, 'keep_rounded_corners': <{'maximized': <false>, 'fullscreen': <false>}>, 'border_radius': <uint32 6>, 'smoothing': <uint32 1>, 'enabled': <true>}"
 ```
 
 #### [RunCat](https://github.com/win0err/gnome-runcat)
