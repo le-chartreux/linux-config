@@ -41,3 +41,7 @@
     - name: Install Kdenlive (FOSS video editor)
       ansible.builtin.dnf:
         name: kdenlive
+
+    - name: Install Shotwell (photo gallery)
+      ansible.builtin.dnf:
+        name: shotwell
